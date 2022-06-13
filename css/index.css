@@ -18,13 +18,259 @@ body {
     max-width: 1250px;
     min-width: 450px;
     padding-bottom: 30px;
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.topnav a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: var(--text);
+    font-style: oblique;
+}
+
+.topnav {
+    border-bottom-style: solid;
+    font-size: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    
+}
+
+.topnav ul {
+    padding-top: 10px;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.topnav a {
+    padding: 8px;
+}
 
 
+.about {
+    padding: 30px 0px;
+}
 
+.about h1 {
+    padding: auto;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about p {
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 22px;
+    text-align: justify;
+}
+
+
+.meet-pastors {
+    padding: 50px 0px;
+    column-count: 3;
+    column-gap: 100px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-width: 100px;
+}
+
+.meet-pastors h1 {
+    padding-bottom: 20px;
+    margin: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.meet-pastors h2 {
+    padding: 5px 0px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.meet-pastors h3 {
+    padding: auto;
+    margin: auto;
+    font-size: 26px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.what-to-expect {
+    padding: 50px 0px;
+    column-count: 2;
+    column-gap: 140px;
+    column-width: 200px;
+}
+
+.what-to-expect h1 {
+    padding-bottom: 20px;
+    margin: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.what-to-expect h2 {
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.what-to-expect p {
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.what-to-expect h3 {
+    padding: auto;
+    margin: auto;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.our-ministries {
+    padding: 50px 0px;
+    column-count: 3;
+    column-gap: 100px;
+    column-width: 150px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+}
+
+.our-ministries h1 {
+    padding: 40px 0px;
+    margin: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.our-ministries h2 {
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.our-ministries p {
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.our-ministries h3 {
+    padding: auto;
+    margin: auto;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.upcoming-events {
+    padding: 50px 0px;
+}
+
+.upcoming-events h1 {
+    padding: 40px 0px;
+    margin: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+
+.our-facilities {
+    padding: 50px 0px;
+}
+
+.our-facilities h1 {
+    padding: 40px 0px;
+    margin: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.our-facilities h2 {
+    padding: 20px 0px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.our-facilities p {
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.our-facilities h3 {
+    padding: auto;
+    margin: auto;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.find-us {
+    padding: 50px 0px;
+}
+
+.find-us a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.find-us h1 {
+    padding: 40px 0px;
+    margin: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.find-us h2 {
+    padding: 20px 0px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.find-us p {
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.find-us h3 {
+    padding: auto;
+    margin: auto;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
 
 @media (max-width: 1350px) {
     html {
