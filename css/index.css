@@ -46,8 +46,9 @@ body {
     text-align: -webkit-center;
     position: -webkit-sticky;
     position: sticky;
-    z-index: 2;
+    z-index: 1;
     top: 0;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px) grayscale(10) opacity(1);
     list-style: none;
 }
@@ -459,7 +460,7 @@ footer a:hover {
 
     .about, .our-services, .meet-pastors, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us {
         columns: 1;
-        width: 75%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -467,8 +468,10 @@ footer a:hover {
 
 @media only screen and (max-width: 768px) {
     .topnav {
-        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
+        display: block;
     }
 
 }
@@ -483,14 +486,14 @@ footer a:hover {
         max-width: 380px;
         padding: 15px;
         margin: auto;
-        font-size: medium;
+        font-size: auto;
     }
 
     .about, .our-services, .meet-pastors, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us {
         columns: 1;
-        width: 75%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
-        font-size: smaller;
+        font-size: 50%;
     }
 }
