@@ -167,9 +167,9 @@ body {
 
 .our-ministries {
     padding: 75px 15px;
-    column-count: 3;
+    column-count: 5;
     column-gap: 100px;
-    column-width: 150px;
+    column-width: 50px;
     column-rule-style: solid;
     column-rule-width: 1px;
 }
