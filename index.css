@@ -1,0 +1,499 @@
+
+html {
+    max-width: 1450px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+body.dark {
+    --text: white;
+    --background: black;
+}
+
+body.light {
+    --text: dark;
+    --background: white;
+
+}
+
+body {
+    color: var(--text);
+    background: var(--background);
+    padding: auto;
+    /*
+    max-width: 1350px;
+    min-width: 450px;
+    */
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: var(--text);
+    font-weight: bold;
+}
+
+.topnav {
+    border-bottom-style: solid;
+    font-size: auto;
+    /* padding: revert; */
+    text-align: center;
+    text-align: -webkit-center;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) grayscale(10) opacity(1);
+    list-style: none;
+}
+
+.topnav ul {
+    padding-top: 15px;
+    padding-left: 0;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.topnav a {
+    padding: 8px;
+}
+
+.about {
+    padding: 75px 15px;
+    column-count: 2;
+    column-gap: 75px;
+    column-width: 5px;
+}
+
+.about h1 {
+    padding: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.about p {
+    font-size: 22px;
+    text-align: justify;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.about img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.our-services {
+    padding: 75px 15px;
+    column-count: 2;
+    column-gap: 50px;
+}
+
+.our-services h1 {
+    padding: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.our-services h2 {
+    padding: 5px 0px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.our-services p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+
+.meet-pastors {
+    padding: 75px 15px;
+    column-count: 3;
+    column-gap: 75px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-width: 100px;
+}
+
+.meet-pastors h1 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.meet-pastors h2 {
+    padding: 5px 0px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.meet-pastors p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+
+.meet-pastors h3 {
+    padding: auto;
+    margin: 0;
+    font-size: 26px;
+    font-style: italic;
+    text-align: center;
+}
+
+.meet-pastors img {
+    padding-top: 10px;
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.what-to-expect {
+    padding: 75px 15px;
+    column-count: 2;
+    column-gap: 140px;
+    column-width: 200px;
+}
+
+.what-to-expect h1 {
+    padding-bottom: 20px;
+
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.what-to-expect h2 {
+    padding: 10px 0px;
+
+    font-size: 30px;
+    text-align: center;
+}
+
+.what-to-expect p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.what-to-expect h3 {
+    padding: auto;
+
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.our-ministries {
+    padding: 75px 15px;
+    column-count: 3;
+    column-gap: 45px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+}
+
+.our-ministries h1 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.our-ministries h2 {
+    margin-top: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.our-ministries p {
+    padding: 10px 0px;
+
+    font-size: 22px;
+    text-align: justify;
+}
+
+.our-ministries h3 {
+    padding: auto;
+
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.upcoming-events {
+    padding: 75px 15px;
+}
+
+.upcoming-events h1 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.upcoming-events p {
+    padding: 10px 0px;
+
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.our-facilities {
+    padding: 75px 15px;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+}
+
+.our-facilities h1 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.our-facilities h2 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.our-facilities p {
+    font-size: 22px;
+    text-align: justify;
+    padding: auto;
+}
+
+.our-facilities h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.our-facilities img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.find-us {
+    padding: 75px 15px;
+    padding-bottom: 500px;
+}
+
+.find-us a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.find-us h1 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.find-us h2 {
+    padding: 20px 0px;
+
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.find-us p {
+    padding: 10px 0px;
+
+    font-size: 22px;
+    text-align: justify;
+}
+
+.find-us h3 {
+    padding: auto;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+/*
+- will revisit footer -
+footer {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+footer ul {
+    display: block;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer li {
+    text-align: center;
+    font-size: 1em;
+}
+
+footer a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text);
+    font-weight: bold;
+}
+*/
+
+/* 
+- will revisit footer -
+.footer-basic {
+    padding:40px 0;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  */
+
+
+@media (max-width: 1350px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 1200px;
+        padding: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 900px;
+        padding: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+
+    .topnav {
+        
+    }
+
+    .about, .our-services, .meet-pastors, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us {
+        columns: 1;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .topnav {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 414px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 380px;
+        padding: 15px;
+        margin: auto;
+        font-size: auto;
+    }
+
+    .about, .our-services, .meet-pastors, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us {
+        columns: 1;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 50%;
+    }
+}
