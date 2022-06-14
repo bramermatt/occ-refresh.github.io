@@ -1,7 +1,7 @@
-body.light {
-    --text: dark;
-    --background: white;
 
+html {
+    max-width: 1450px;
+    margin: auto;
 }
 
 body.dark {
@@ -9,14 +9,20 @@ body.dark {
     --background: black;
 }
 
+body.light {
+    --text: dark;
+    --background: white;
+
+}
+
 body {
     color: var(--text);
     background: var(--background);
-
-    margin: auto;
     padding: auto;
-    max-width: 1250px;
+    /*
+    max-width: 1350px;
     min-width: 450px;
+    */
     padding-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,20 +34,26 @@ body {
 
 .topnav a:hover {
     color: var(--text);
-    font-style: oblique;
+    font-weight: bold;
 }
 
 .topnav {
     border-bottom-style: solid;
     font-size: 20px;
+    /* padding: revert; */
+    text-align: center;
+    text-align: -webkit-center;
     position: -webkit-sticky;
     position: sticky;
     z-index: 1;
     top: 0;
+    backdrop-filter: blur(100px);
+    list-style: none;
 }
 
 .topnav ul {
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-left: 0;
 }
 
 .topnav li {
@@ -53,27 +65,31 @@ body {
 }
 
 
+
+
+
+
 .about {
-    padding: 30px 0px;
+    padding: 75px 15px;
 }
 
 .about h1 {
     padding: auto;
-    margin: auto;
+
     font-size: 50px;
     text-align: center;
 }
 
 .about p {
     padding: 10px 0px;
-    margin: auto;
+
     font-size: 22px;
     text-align: justify;
 }
 
 
 .meet-pastors {
-    padding: 50px 0px;
+    padding: 75px 15px;
     column-count: 3;
     column-gap: 100px;
     column-rule-style: solid;
@@ -83,7 +99,6 @@ body {
 
 .meet-pastors h1 {
     padding-bottom: 20px;
-    margin: auto;
     font-size: 50px;
     column-span: all;
     text-align: center;
@@ -91,14 +106,21 @@ body {
 
 .meet-pastors h2 {
     padding: 5px 0px;
-    margin: auto;
+    margin: 0;
     font-size: 30px;
+    text-align: center;
+}
+
+.meet-pastors p {
+    padding: 10px 0px;
+
+    font-size: 22px;
     text-align: center;
 }
 
 .meet-pastors h3 {
     padding: auto;
-    margin: auto;
+    margin: 0;
     font-size: 26px;
     font-style: italic;
     text-align: center;
@@ -106,7 +128,7 @@ body {
 
 
 .what-to-expect {
-    padding: 50px 0px;
+    padding: 75px 15px;
     column-count: 2;
     column-gap: 140px;
     column-width: 200px;
@@ -114,7 +136,7 @@ body {
 
 .what-to-expect h1 {
     padding-bottom: 20px;
-    margin: auto;
+
     font-size: 50px;
     column-span: all;
     text-align: center;
@@ -122,21 +144,21 @@ body {
 
 .what-to-expect h2 {
     padding: 10px 0px;
-    margin: auto;
+
     font-size: 30px;
     text-align: center;
 }
 
 .what-to-expect p {
     padding: 10px 0px;
-    margin: auto;
+
     font-size: 22px;
     text-align: justify;
 }
 
 .what-to-expect h3 {
     padding: auto;
-    margin: auto;
+
     font-size: 20px;
     font-style: italic;
     text-align: justify;
@@ -144,7 +166,7 @@ body {
 
 
 .our-ministries {
-    padding: 50px 0px;
+    padding: 75px 15px;
     column-count: 3;
     column-gap: 100px;
     column-width: 150px;
@@ -153,8 +175,6 @@ body {
 }
 
 .our-ministries h1 {
-    padding: 40px 0px;
-    margin: auto;
     font-size: 50px;
     column-span: all;
     text-align: center;
@@ -162,21 +182,21 @@ body {
 
 .our-ministries h2 {
     padding: 10px 0px;
-    margin: auto;
+
     font-size: 30px;
     text-align: center;
 }
 
 .our-ministries p {
     padding: 10px 0px;
-    margin: auto;
+
     font-size: 22px;
-    text-align: justify;
+    text-align: center;
 }
 
 .our-ministries h3 {
     padding: auto;
-    margin: auto;
+
     font-size: 20px;
     font-style: italic;
     text-align: justify;
@@ -184,25 +204,28 @@ body {
 
 
 .upcoming-events {
-    padding: 50px 0px;
+    padding: 75px 15px;
 }
 
 .upcoming-events h1 {
-    padding: 40px 0px;
-    margin: auto;
     font-size: 50px;
     column-span: all;
     text-align: center;
 }
 
+.upcoming-events p {
+    padding: 10px 0px;
+
+    font-size: 22px;
+    text-align: center;
+}
+
 
 .our-facilities {
-    padding: 50px 0px;
+    padding: 75px 15px;
 }
 
 .our-facilities h1 {
-    padding: 40px 0px;
-    margin: auto;
     font-size: 50px;
     column-span: all;
     text-align: center;
@@ -210,21 +233,21 @@ body {
 
 .our-facilities h2 {
     padding: 20px 0px;
-    margin: auto;
+
     font-size: 30px;
     text-align: center;
 }
 
 .our-facilities p {
     padding: 10px 0px;
-    margin: auto;
+
     font-size: 22px;
     text-align: justify;
 }
 
 .our-facilities h3 {
     padding: auto;
-    margin: auto;
+
     font-size: 20px;
     font-style: italic;
     text-align: justify;
@@ -232,7 +255,8 @@ body {
 
 
 .find-us {
-    padding: 50px 0px;
+    padding: 75px 15px;
+    padding-bottom: 500px;
 }
 
 .find-us a:link, a:visited {
@@ -241,8 +265,6 @@ body {
 }
 
 .find-us h1 {
-    padding: 40px 0px;
-    margin: auto;
     font-size: 50px;
     column-span: all;
     text-align: center;
@@ -250,7 +272,7 @@ body {
 
 .find-us h2 {
     padding: 20px 0px;
-    margin: auto;
+
     font-size: 30px;
     text-align: center;
     text-decoration: none;
@@ -258,18 +280,110 @@ body {
 
 .find-us p {
     padding: 10px 0px;
-    margin: auto;
+
     font-size: 22px;
     text-align: justify;
 }
 
 .find-us h3 {
     padding: auto;
-    margin: auto;
     font-size: 20px;
     font-style: italic;
     text-align: justify;
 }
+
+
+/*
+- will revisit footer -
+footer {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+footer ul {
+    display: block;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer li {
+    text-align: center;
+    font-size: 1em;
+}
+
+footer a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text);
+    font-weight: bold;
+}
+*/
+
+/* 
+- will revisit footer -
+.footer-basic {
+    padding:40px 0;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  */
+
+
 
 @media (max-width: 1350px) {
     html {
