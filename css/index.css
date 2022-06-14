@@ -69,7 +69,7 @@ body {
 .about {
     padding: 75px 15px;
     column-count: 2;
-    column-gap: 75px;
+    column-gap: 50px;
     column-width: 5px;
 }
 
@@ -83,12 +83,11 @@ body {
 .about p {
     font-size: 22px;
     text-align: justify;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
     margin: 0;
 }
 
 .about img {
-    margin: auto;
     max-width: 100%;
     height: auto;
 }
@@ -144,7 +143,7 @@ body {
 }
 
 .meet-pastors p {
-    font-size: 22px;
+    font-size: 20px;
     text-align: justify;
 }
 
