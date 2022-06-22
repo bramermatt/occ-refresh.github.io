@@ -39,6 +39,7 @@ body {
 }
 
 .topnav {
+    border-top-style: solid;
     border-bottom-style: solid;
     font-size: auto;
     /* padding: revert; */
@@ -54,7 +55,6 @@ body {
 }
 
 .topnav ul {
-    padding-top: 15px;
     padding-left: 0;
 }
 
@@ -122,10 +122,11 @@ body {
 .meet-pastors {
     padding: 75px 15px;
     column-count: 3;
-    column-gap: 75px;
+    column-gap: 80px;
     column-rule-style: solid;
     column-rule-width: 1px;
     column-width: 100px;
+    column-fill: auto;
 }
 
 .meet-pastors h1 {
@@ -140,11 +141,13 @@ body {
     margin: 0;
     font-size: 30px;
     text-align: center;
+    break-before: column;
 }
 
 .meet-pastors p {
     font-size: 20px;
     text-align: justify;
+    break-after:left;
 }
 
 
