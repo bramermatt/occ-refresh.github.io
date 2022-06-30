@@ -85,14 +85,14 @@ body {
 }
 
 .about p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin: 0;
 }
 
-.about img {
-    padding: 20px 0px;
+.about img, .upcoming-events img {
+    /* padding: 20px 0px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -100,6 +100,7 @@ body {
     max-width: 100%;
     height:auto;
     overflow:hidden;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
 
@@ -124,7 +125,7 @@ body {
 }
 
 .our-services p {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -188,6 +189,7 @@ body {
     max-width: 150px;
     height:auto;
     overflow:hidden;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
 
@@ -218,6 +220,7 @@ body {
     /* padding-top: 0;
     padding-bottom: 10px; */
     text-align: justify;
+    margin-bottom: 35px;
     /* font-size: 20px; */
     /* break-after:left; */
 }
@@ -252,8 +255,9 @@ body {
 
 .our-ministries p {
     padding: 10px 0px;
-    font-size: 20px;
+    /* font-size: 20px; */
     text-align: justify;
+    /* margin-bottom: 40px; */
 }
 
 .our-ministries h3 {
@@ -267,7 +271,7 @@ body {
 
 .upcoming-events {
     padding: 75px 45px;
-    max-width: 800px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -280,8 +284,8 @@ body {
 
 .upcoming-events p {
     padding: 10px 0px;
-    font-size: 20px;
-    text-align: center;
+    /* font-size: 20px; */
+    /* text-align: center; */
 }
 
 
@@ -306,7 +310,7 @@ body {
 }
 
 .our-facilities p {
-    font-size: 20px;
+    /* font-size: 20px; */
     text-align: justify;
     padding: auto;
 }
@@ -323,6 +327,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
 
@@ -467,7 +472,7 @@ footer a:hover {
         columns: 2;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1000px;
+        max-width: 900px;
     }
 
 .what-to-expect img {
