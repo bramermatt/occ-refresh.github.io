@@ -1,4 +1,3 @@
-
 html {
     max-width: 1750px;
     margin: auto;
@@ -24,6 +23,7 @@ body {
     color: var(--text);
     background: var(--background);
     padding: auto;
+    margin: auto;
     /*
     max-width: 1350px;
     min-width: 450px;
@@ -71,10 +71,13 @@ body {
 }
 
 .about {
-    padding: 75px 45px;
+    padding: 75px 15px;
     column-count: 2;
     column-gap: 50px;
     column-width: 5px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about h1 {
@@ -105,7 +108,7 @@ body {
 
 
 .our-services {
-    padding: 75px 45px;
+    padding: 75px 15px;
     column-count: 2;
     column-gap: 50px;
 }
@@ -130,12 +133,15 @@ body {
 }
 
 .meet-pastors {
-    padding: 75px 45px;
+    padding: 75px 15px;
     column-count: 3;
-    column-gap: 140px;
-    column-rule-style: solid;
-    column-rule-width: 1px;
+    column-gap: 120px;
+    /* column-rule-style: solid;
+    column-rule-width: 1px; */
     column-width: 100px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .meet-pastors h1 {
@@ -176,7 +182,7 @@ body {
     padding-top: 0;
     padding-bottom: 10px;
     text-align: justify;
-    /* font-size: 20px; */
+    font-size: 20px;
     /* break-after:left; */
 }
 
@@ -194,9 +200,12 @@ body {
 
 
 .what-to-expect {
-    padding: 75px 45px;
+    padding: 75px 15px;
     column-count: 4;
     column-gap: 40px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     /* column-width: 200px; */  
 }
 
@@ -220,8 +229,8 @@ body {
     /* padding-top: 0;
     padding-bottom: 10px; */
     text-align: justify;
-    margin-bottom: 35px;
-    /* font-size: 20px; */
+    margin-bottom: 60px;
+    font-size: 20px;
     /* break-after:left; */
 }
 
@@ -234,11 +243,14 @@ body {
 
 
 .our-ministries {
-    padding: 75px 45px;
+    padding: 75px 15px;
     column-count: 3;
     column-gap: 100px;
-    column-rule-style: solid;
-    column-rule-width: 1px;
+    /* column-rule-style: solid;
+    column-rule-width: 1px; */
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .our-ministries h1 {
@@ -255,7 +267,7 @@ body {
 
 .our-ministries p {
     padding: 10px 0px;
-    /* font-size: 20px; */
+    font-size: 20px;
     text-align: justify;
     /* margin-bottom: 40px; */
 }
@@ -270,10 +282,11 @@ body {
 
 
 .upcoming-events {
-    padding: 75px 45px;
+    padding: 75px 15px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .upcoming-events h1 {
@@ -284,15 +297,18 @@ body {
 
 .upcoming-events p {
     padding: 10px 0px;
-    /* font-size: 20px; */
+    font-size: 20px;
     /* text-align: center; */
 }
 
 
 .our-facilities {
-    padding: 75px 45px;
+    padding: 75px 15px;
     column-count: 3;
     column-gap: 75px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     /* column-rule-style: solid;
     column-rule-width: 1px; */
 }
@@ -310,7 +326,7 @@ body {
 }
 
 .our-facilities p {
-    /* font-size: 20px; */
+    font-size: 20px;
     text-align: justify;
     padding: auto;
 }
@@ -332,7 +348,7 @@ body {
 
 
 .find-us {
-    padding: 75px 45px;
+    padding: 75px 15px;
     padding-bottom: 500px;
 }
 
