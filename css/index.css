@@ -194,7 +194,7 @@ body {
 .what-to-expect {
     padding: 75px 45px;
     column-count: 4;
-    column-gap: 30px;
+    column-gap: 40px;
     /* column-width: 200px; */  
 }
 
@@ -208,7 +208,7 @@ body {
 .what-to-expect h2 {
     /* font-size: 30px; */
     text-align: center;
-    margin-top: 0;
+    margin-top: auto;
     /* padding-top: 0;
     margin-top: 0; */
     /* break-before: column; */
@@ -343,8 +343,9 @@ body {
 }
 
 .find-us h2 {
-    padding: 20px 0px;
-    font-size: 30px;
+    /* padding: 20px 0px;
+    font-size: 30px; */
+    margin-top: auto;
     text-align: center;
     text-decoration: none;
 }
@@ -452,6 +453,35 @@ footer a:hover {
     margin-bottom:0;
   }
   */
+
+  @media (max-width: 1560px) {
+    /* html {
+        max-width:screen;
+    } */
+
+   body {
+        text-align: center;
+    }
+
+    .what-to-expect {
+        columns: 2;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+    }
+
+.what-to-expect img {
+    /* padding: 20px 0px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 206px;
+    max-width: 100%;
+    height:auto;
+    overflow:hidden;
+    padding-bottom: 20px;
+    } 
+}
 
 
 @media (max-width: 1450px) {
