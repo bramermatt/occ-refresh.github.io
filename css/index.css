@@ -1,5 +1,5 @@
 html {
-    max-width: 1750px;
+    /* max-width: 1750px; */
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -30,7 +30,20 @@ body {
     */
     padding-bottom: 30px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    letter-spacing: .025em;
+    cursor: default;
 }
+
+blockquote {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding: 0 1em; */
+    color: #777;
+    /* border-left: .25em solid #ddd; */
+}
+
 
 .topnav a:link, a:visited {
     color: var(--text);
@@ -71,7 +84,7 @@ body {
 }
 
 .about {
-    padding: 75px 15px;
+    padding: 75px 25px;
     column-count: 2;
     column-gap: 50px;
     column-width: 5px;
@@ -133,11 +146,9 @@ body {
 }
 
 .meet-pastors {
-    padding: 75px 15px;
+    padding: 75px 25px;
     column-count: 3;
     column-gap: 120px;
-    /* column-rule-style: solid;
-    column-rule-width: 1px; */
     column-width: 100px;
     max-width: 1400px;
     margin-left: auto;
@@ -156,10 +167,7 @@ body {
 
     margin: 0;
     font-size: 30px;
-    /* padding: 5px 0px;    
-    padding-top: 10px;
-    text-align: center;
-    break-before: column; */
+
 }
 
 .meet-pastors h3 {
@@ -167,23 +175,15 @@ body {
     margin: auto;
     text-align: center;
     font-style: italic;
-    /* font-size: 25px; */
-    
-    /* padding: auto;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 10px;
-    font-size: 26px;
-    font-style: italic;
-    text-align: center; */
+
 }
 
 .meet-pastors p {
     padding-top: 0;
     padding-bottom: 10px;
-    text-align: justify;
+    text-align: left;
     font-size: 20px;
-    /* break-after:left; */
+    text-indent: 30px;
 }
 
 .meet-pastors img {
@@ -200,12 +200,13 @@ body {
 
 
 .what-to-expect {
-    padding: 75px 15px;
+    padding: 75px 25px;
     column-count: 4;
-    column-gap: 40px;
+    column-gap: 50px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     /* column-width: 200px; */  
 }
 
@@ -228,7 +229,7 @@ body {
 .what-to-expect p {
     /* padding-top: 0;
     padding-bottom: 10px; */
-    text-align: justify;
+    /* text-align: justify; */
     margin-bottom: 60px;
     font-size: 20px;
     /* break-after:left; */
@@ -243,7 +244,7 @@ body {
 
 
 .our-ministries {
-    padding: 75px 15px;
+    padding: 75px 25px;
     column-count: 3;
     column-gap: 100px;
     /* column-rule-style: solid;
@@ -282,7 +283,7 @@ body {
 
 
 .prayers {
-    padding: 75px 15px;
+    padding: 75px 25px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -309,7 +310,7 @@ body {
 
 
 .offerings {
-    padding: 75px 15px;
+    padding: 75px 25px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -345,7 +346,7 @@ body {
 
 
 .upcoming-events {
-    padding: 75px 15px;
+    padding: 75px 25px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -366,7 +367,7 @@ body {
 
 
 .our-facilities {
-    padding: 75px 15px;
+    padding: 75px 25px;
     column-count: 3;
     column-gap: 75px;
     max-width: 1400px;
@@ -411,7 +412,7 @@ body {
 
 
 .find-us {
-    padding: 75px 15px;
+    padding: 75px 25px;
     padding-bottom: 500px;
 }
 
