@@ -120,6 +120,47 @@ blockquote {
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
+.statement {
+    columns: 1;
+    padding: 75px 25px;
+    column-gap: 50px;
+    column-width: 5px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statement h1 {
+    padding: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.statement p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.statement a {
+    text-align: center;
+}
+
+
+/* .statement a:link, a:visited  */
+body a:link, a:visited {
+    /* text-decoration:overline; */
+    color: var(--text);
+}
+
+/* .statement a:hover */
+body a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 .our-services {
     padding: 75px 15px;
@@ -283,7 +324,7 @@ blockquote {
 
 .prayers {
     padding: 75px 25px;
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     
@@ -304,7 +345,8 @@ blockquote {
 .prayers p {
     padding: 10px 0px;
     font-size: 20px;
-    /* text-align: center; */
+    /* text-align: justify; */
+    text-align: center;
 }
 
 
@@ -358,10 +400,20 @@ blockquote {
     text-align: center;
 }
 
+.upcoming-events h2, .our-facilities h2 {
+    font-size: 35px;
+    margin: 5px;
+    text-align: center;
+}
+
 .upcoming-events p {
     padding: 10px 0px;
     font-size: 20px;
     /* text-align: center; */
+}
+
+.upcoming-events blockquote, .our-facilities blockquote {
+    font-size: 18px;
 }
 
 
@@ -382,16 +434,10 @@ blockquote {
     text-align: center;
 }
 
-.our-facilities h2 {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 0;
-}
-
 .our-facilities p {
     font-size: 20px;
-    /* text-align: justify;
-    padding: auto; */
+    margin: 5px;
+    text-align: justify;
 }
 
 .our-facilities h3 {
@@ -589,7 +635,7 @@ footer a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 206px;
+    max-height: 250px;
     max-width: 100%;
     height:auto;
     overflow:hidden;
