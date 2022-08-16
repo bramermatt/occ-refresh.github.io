@@ -165,7 +165,9 @@ body a:hover {
 .our-services {
     padding: 75px 15px;
     column-count: 2;
-    column-gap: 50px;
+    max-width: max-content;
+    /* column-gap: 50px; */
+    margin: auto;
 }
 
 .our-services h1 {
@@ -403,6 +405,8 @@ body a:hover {
 .upcoming-events h2, .our-facilities h2 {
     font-size: 35px;
     margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -414,6 +418,18 @@ body a:hover {
 
 .upcoming-events blockquote, .our-facilities blockquote {
     font-size: 18px;
+    margin: 5px;
+}
+
+.upcoming-events h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.upcoming-events iframe {
+    text-align: center;
 }
 
 

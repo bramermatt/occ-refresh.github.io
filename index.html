@@ -194,74 +194,74 @@
         <p><strong>Click the link below to give your online Offering!</strong></p>
 
         <div>
-            <div><div style="
-            overflow: auto;
-            margin-left: auto;
-            margin-right: auto;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            width: 259px;
-            background: #FFFFFF;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
-            border-radius: 10px;
-            ">
-            <div style="padding: 20px;">
-            <a target="_blank" data-url="https://square.link/u/xrs8uguf?src=embd" href="https://square.link/u/xrs8uguf?src=embed" style="
-              display: inline-block;
-              font-size: 18px;
-              line-height: 48px;
-              height: 48px;
-              color: #ffffff;
-              min-width: 212px;
-              background-color: #000000;
-              text-align: center;
-              text-decoration: none;
-              box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
-              
-            ">Church Offerings</a>
-            </div>
-          </div>
-          </div>
+        <div><div style="
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 259px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        ">
+        <div style="padding: 20px;">
+        <a target="_blank" data-url="https://square.link/u/xrs8uguf?src=embd" href="https://square.link/u/xrs8uguf?src=embed" style="
+          display: inline-block;
+          font-size: 18px;
+          line-height: 48px;
+          height: 48px;
+          color: #ffffff;
+          min-width: 212px;
+          background-color: #000000;
+          text-align: center;
+          text-decoration: none;
+          box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
           
-            <script>
-              function showCheckoutWindow(e) {
-                e.preventDefault();
-          
-                const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
-                const title = 'Square Online Checkout';
-          
-                // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
-                const topWindow = window.top ? window.top : window;
-          
-                // Fixes dual-screen position                                Most browsers          Firefox
-                const dualScreenLeft = topWindow.screenLeft !==  undefined ? topWindow.screenLeft : topWindow.screenX;
-                const dualScreenTop = topWindow.screenTop !==  undefined   ? topWindow.screenTop  : topWindow.screenY;
-          
-                const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-                const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-          
-                const h = height * .75;
-                const w = 500;
-          
-                const systemZoom = width / topWindow.screen.availWidth;
-                const left = (width - w) / 2 / systemZoom + dualScreenLeft;
-                const top = (height - h) / 2 / systemZoom + dualScreenTop;
-                const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
-          
-                if (window.focus) newWindow.focus();
-              }
-          
-              // This overrides the default checkout button click handler to show the embed modal
-              // instead of opening a new tab with the given link url
-              document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
-                showCheckoutWindow(e);
-              });
-            </script>
-          </div>
+        ">Church Offerings</a>
+        </div>
+      </div>
+      </div>
+      
+        <script>
+          function showCheckoutWindow(e) {
+            e.preventDefault();
+      
+            const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
+            const title = 'Square Online Checkout';
+      
+            // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
+            const topWindow = window.top ? window.top : window;
+      
+            // Fixes dual-screen position                                Most browsers          Firefox
+            const dualScreenLeft = topWindow.screenLeft !==  undefined ? topWindow.screenLeft : topWindow.screenX;
+            const dualScreenTop = topWindow.screenTop !==  undefined   ? topWindow.screenTop  : topWindow.screenY;
+      
+            const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+      
+            const h = height * .75;
+            const w = 500;
+      
+            const systemZoom = width / topWindow.screen.availWidth;
+            const left = (width - w) / 2 / systemZoom + dualScreenLeft;
+            const top = (height - h) / 2 / systemZoom + dualScreenTop;
+            const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
+      
+            if (window.focus) newWindow.focus();
+          }
+      
+          // This overrides the default checkout button click handler to show the embed modal
+          // instead of opening a new tab with the given link url
+          document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
+            showCheckoutWindow(e);
+          });
+        </script>
+      </div>
 
         <!-- <a href="https://squareup.com/terminal/" target="_blank"><img src="img/offerings/offering-icon.jpg" alt="offering-icon"></a> -->
     </div>
@@ -272,7 +272,12 @@
     <div class="upcoming-events" id="upcoming-events">
     <h1>Events</h1>
     <!--lorum ipsum text REPLACE-->
-    <h2>VBS 2022!</h2>
+    <h3>One Community Church Google Calendar of Events</h3>
+    <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showNav=1&showTitle=0&showTz=0&showCalendars=0&showTabs=1&showPrint=1&showDate=1&title=One%20Community%20Church%20Event%20Calendar&src=MTc3bWluaXN0cmllc0BnbWFpbC5jb20&color=%237986CB" style="border:solid 1px #777" width="100%" height="500" frameborder="0" scrolling="no" text-align="center"></iframe>
+    <blockquote>You can change to Week, Month, or Agenda Views</blockquote>
+
+    <h2>Recent Events</h2>
+    <h3>VBS 2022!</h3>
     <img src="img/events/vbs22/vbs-kids.jpg" alt="vbs-kids">
     <blockquote>Our staff and kids from VBS 2022!</blockquote>
     </div>
