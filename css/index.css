@@ -83,7 +83,7 @@ blockquote {
 }
 
 .topnav::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
   }
 
 
