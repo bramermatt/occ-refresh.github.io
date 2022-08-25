@@ -90,6 +90,7 @@ blockquote {
 .topnav ul {
     padding-left: 0;
     margin: 5px;
+    padding: 5px;
 }
 
 .topnav li {
@@ -97,7 +98,7 @@ blockquote {
 }
 
 .topnav a {
-    padding: 0px 4px 0px 4px;
+    padding: 5px 12px 5px 12px;
 }
 
 
