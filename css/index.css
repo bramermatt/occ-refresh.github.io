@@ -80,10 +80,12 @@ blockquote {
     margin: 0 auto 0;
     top: 0;
     width: 100%;
+    scrollbar-color: var(--scrollbar) transparent;
 }
 
 .topnav::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
+
   }
 
 
