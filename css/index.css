@@ -44,6 +44,11 @@ blockquote {
     /* border-left: .25em solid #ddd; */
 }
 
+.topnav.scrolled a:hover {
+    /* color: #10d9e4; */
+    font-weight: bold;
+  }
+
 
 .topnav a:link, a:visited {
     color: var(--text);
