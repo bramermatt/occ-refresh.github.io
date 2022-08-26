@@ -456,7 +456,8 @@ body a:hover {
 
 .staff {
     padding: 25px 25px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    width: max-content;
     margin: auto;
 }
 
@@ -483,7 +484,7 @@ body a:hover {
 }
 
 .team-of-teachers {
-    display: flex;
+    /* display: flex; */
 }
 
 .teacher {
