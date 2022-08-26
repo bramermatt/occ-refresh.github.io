@@ -454,6 +454,57 @@ body a:hover {
 }
 
 
+.staff {
+    padding: 25px 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.staff h1 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+
+.team {
+    border: 1px solid;
+    max-width: max-content;
+    /* margin: auto; */
+    padding: 20px;
+    margin: 15px;
+}
+
+.team h2 {
+    margin: 0;
+    text-align: center;
+    column-span: all;
+    font-size: 30px;
+}
+
+.team-of-teachers {
+    display: flex;
+}
+
+.teacher {
+    padding: 15px; 
+    text-align: center;
+}
+
+.teacher h3 {
+    margin: 0;
+}
+
+.teacher h4 {
+    margin: 0;
+}
+
+.teacher img {
+    max-width: 220px;
+    margin-top: 10px;
+}
+
+
 .prayers {
     /* padding: 75px 25px; */
     padding: 25px 25px;
