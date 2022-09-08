@@ -283,8 +283,10 @@ body a:link, a:visited {
 /* .statement a:hover */
 body a:hover {
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
+    /* text-decoration:dashed; */
 }
+
 
 
 .our-services {
@@ -319,15 +321,15 @@ body a:hover {
     /* padding: 75px 25px; */
     padding: 25px 25px;
     column-count: 3;
-    column-gap: 60px;
-    column-width: 100px;
-    max-width: 1400px;
+    column-gap: 90px;
+    /* column-width: 80px; */
+    max-width: 1450px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .meet-pastors h1 {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-size: 50px;
     column-span: all;
     text-align: center;
@@ -335,7 +337,7 @@ body a:hover {
 
 .meet-pastors h2 {
     text-align: center;
-    margin: 0;
+    margin: 1px;
     font-size: 30px;
 
 }
@@ -349,10 +351,11 @@ body a:hover {
 
 .meet-pastors p {
     padding-top: 0;
-    /* padding-bottom: 10px; */
+    /* padding-bottom: 20px; */
     text-align: justify;
-    font-size: 20px;
+    /* font-size: 18px; */
     text-indent: 30px;
+    line-height: 1.5em;
 }
 
 .meet-pastors img {
@@ -443,11 +446,12 @@ body a:hover {
 
 .our-ministries p {
     /* padding: 10px 0px; */
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5rem;
     text-align: justify;
     margin-top: 5px;
     margin-bottom: 100px;
-    /* line-break:anywhere; */
+    /* line-break: anywhere; */
 }
 
 .our-ministries h3 {
@@ -595,9 +599,10 @@ body a:hover {
 .upcoming-events h2, .our-facilities h2 {
     font-size: 35px;
     margin: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
     text-align: center;
+    /* border-bottom: 1px solid; */
 }
 
 .upcoming-events p {
@@ -628,7 +633,7 @@ body a:hover {
     padding: 25px 25px;
     column-count: 3;
     column-gap: 75px;
-    max-width: 1400px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     /* column-rule-style: solid;
@@ -639,11 +644,12 @@ body a:hover {
     font-size: 50px;
     column-span: all;
     text-align: center;
+
 }
 
 .our-facilities p {
     font-size: 20px;
-    margin: 5px;
+    /* margin: 5px; */
     text-align: justify;
 }
 
