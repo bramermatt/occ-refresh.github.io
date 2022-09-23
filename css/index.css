@@ -19,10 +19,10 @@ body.light {
 
 }
 
-body h1 {
+/* body h1 {
     border-bottom: 1px solid;
     padding-bottom: 10px;
-}
+} */
 
 body {
     color: var(--text);
@@ -69,7 +69,6 @@ blockquote {
     border-top-style: solid;
     border-bottom-style: solid;
     font-size: auto;
-    /* padding: revert; */
     text-align: center;
     text-align: -webkit-center;
     position: -webkit-sticky;
@@ -79,12 +78,6 @@ blockquote {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px) grayscale(10) opacity(1);
     list-style: none;
-
-    /* white-space: nowrap;
-	overflow-x: auto;
-	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch; */
-
     overflow-x: scroll;
     white-space: nowrap;
     margin: 0 auto 0;
@@ -93,7 +86,6 @@ blockquote {
     scrollbar-color: var(--scrollbar) transparent;
 
     visibility: visible;
-    /* display: none; */
 }
 
 .topnav::-webkit-scrollbar {
@@ -119,23 +111,51 @@ blockquote {
 
 .topnav-inline {
     /* display: inline; */
+    /* display: none;
+    transition: .2s ease all; */
+
+    padding: 15px 22px 13px;
+    font-family: 'Sharp Grotesk',sans-serif;
+    /* color: #000; */
+    color: var(--text);
+    /* line-height: 14px; */
+    /* font-size: 40px; */
+    height: 130vh;
+    z-index: 1;
+    font-weight: 500;
+    letter-spacing: .3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* background-color: rgb(68, 163, 68); */
+    /* max-width: 100%; */
+    /* display: inline-block; */
+    text-align: center;
+    /* padding-left: 0; */
+    /* margin: 5px; */
+    /* padding-right: 85px; */
+    /* padding-top: 5px; */
+    /* visibility: hidden; */
     display: none;
-    transition: .2s ease all;
 }
 
 .topnav-inline ul {
-    padding-left: 0;
+    /* padding-left: 0;
     margin: 5px;
     padding-right: 65px;
-    padding-top: 5px;
+    padding-top: 5px; */
+    list-style: none;
+    font-size: 30px;
+    letter-spacing: .23rem;
+    line-height: 40px;
+    padding: 0;
 }
 
 .topnav-inline li {
-    display: flex;
-    /* background-color: black; */
-    /* color: white; */
+    /* display: flex;
     padding: 5px;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; */
+    padding: 15px; 
+
 }
 
 .topnav-inline a {
@@ -169,8 +189,7 @@ blockquote {
     list-style: none; */
     /* padding: 10px; */
 
-    position: absolute;
-    /* transition: .2s ease all; */
+    /* position: absolute;
     cursor: pointer;
     width: 32px;
     height: 32px;
@@ -178,15 +197,30 @@ blockquote {
     right: 2rem;
     border-bottom: none;
 
+    visibility: hidden; */
+
+
+    display: flex;
+    /* padding: 10px; */
+    /* max-width: 500px; */
+    transition: .2s ease all;
     visibility: hidden;
+    /* background-color: rgb(68, 163, 68); */
+    border-bottom: .5px solid;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    /* box-shadow: 4px 4px white, 10px 10px black; */
+
 }
 
 .hamburger a:link, a:visited {
     font-size: 30px;
     text-decoration: none;
-    /* float: right; */
-    padding-right: 10px;
-    right: 10px;
+    padding: 10px;
 }
 
 
@@ -889,6 +923,14 @@ footer a:hover {
         display: none;
         visibility: hidden;
     } */
+
+
+}
+
+@media (min-width: 1100px) {
+    .hamburger {
+        display: none;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -899,9 +941,10 @@ footer a:hover {
 
     .hamburger {
         visibility: visible;
+        display: flex;
     }
 
-    body h1 {
+    /* body h1 {
         position: -webkit-sticky;
         position: sticky;
         z-index: 1;
@@ -909,7 +952,7 @@ footer a:hover {
         padding: 5px;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px) grayscale(10) opacity(1);
-    }
+    } */
 
     body p {
         padding: 15px;
@@ -919,6 +962,14 @@ footer a:hover {
         font-size: 30px;
         margin-top: 40px;
     }
+
+    .what-to-expect p {
+        /* padding: 10px; */
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    
 }
 
 
@@ -977,3 +1028,20 @@ footer a:hover {
         font-size: 50%;
     }
 } */
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+    .hamburger, .topnav-inline {
+        background-color: rgb(29,29,29);
+    }
+
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .hamburger, .topnav-inline {
+        background-color: white;
+    }
+
+}
