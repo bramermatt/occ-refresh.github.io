@@ -104,7 +104,7 @@ blockquote {
 }
 
 .topnav a {
-    padding: 5px 12px 5px 12px;
+    padding: 10px;
 }
 
 
@@ -120,7 +120,7 @@ blockquote {
     color: var(--text);
     /* line-height: 14px; */
     /* font-size: 40px; */
-    height: 130vh;
+    height: 100vh;
     z-index: 1;
     font-weight: 500;
     letter-spacing: .3px;
@@ -159,7 +159,7 @@ blockquote {
 }
 
 .topnav-inline a {
-    padding: 5px 12px 5px 12px;
+    /* padding: 5px 12px 5px 12px; */
 }
 
 .topnav-inline a:link, a:visited {
@@ -252,7 +252,7 @@ blockquote {
     column-count: 2;
     column-gap: 50px;
     column-width: 5px;
-    max-width: 1400px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -363,7 +363,7 @@ body a:hover {
     column-count: 3;
     column-gap: 90px;
     /* column-width: 80px; */
-    max-width: 1450px;
+    max-width: 1650px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -379,11 +379,12 @@ body a:hover {
     text-align: center;
     margin: 1px;
     font-size: 30px;
+    margin-top: auto;
 
 }
 
 .meet-pastors h3 {
-    margin: auto;
+    margin: 1px;
     text-align: center;
     font-style: italic;
 
@@ -393,7 +394,7 @@ body a:hover {
     padding-top: 0;
     /* padding-bottom: 20px; */
     text-align: justify;
-    /* font-size: 18px; */
+    font-size: 18px;
     text-indent: 30px;
     line-height: 1.5em;
 }
@@ -416,7 +417,7 @@ body a:hover {
     padding: 25px 25px;
     column-count: 4;
     column-gap: 50px;
-    max-width: 1400px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -465,7 +466,7 @@ body a:hover {
     column-rule-width: 1px; */
     /* max-width: 1400px; */
     /* width: max-content; */
-    max-width: 900px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -624,7 +625,7 @@ body a:hover {
 .upcoming-events {
     /* padding: 75px 25px; */
     padding: 25px 25px;
-    max-width: 700px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     
@@ -640,7 +641,7 @@ body a:hover {
     font-size: 35px;
     margin: 5px;
     /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     text-align: center;
     /* border-bottom: 1px solid; */
 }
@@ -673,7 +674,7 @@ body a:hover {
     padding: 25px 25px;
     column-count: 3;
     column-gap: 75px;
-    max-width: 1200px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     /* column-rule-style: solid;
@@ -748,20 +749,19 @@ body a:hover {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 25px; /* Place the button at the bottom of the page */
-    right: 25px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    /* COLOR: red; Set a background color */
-    color: var(--text); /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 40px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: var(--text);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
     opacity: 40%;
   }
   
@@ -912,17 +912,12 @@ footer a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 250px;
+    /* max-height: 250px; */
     max-width: 100%;
     height:auto;
     overflow:hidden;
     /* padding-bottom: 20px; */
     } 
-
-    /* .topnav-inline {
-        display: none;
-        visibility: hidden;
-    } */
 
 
 }
@@ -944,26 +939,27 @@ footer a:hover {
         display: flex;
     }
 
-    /* body h1 {
-        position: -webkit-sticky;
-        position: sticky;
-        z-index: 1;
-        top: 0;
-        padding: 5px;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px) grayscale(10) opacity(1);
-    } */
+    .topnav-inline li {
+        padding: 10px;
+        font-size: 25px;
+    }
+
 
     body p {
         padding: 15px;
     }
 
     .about h1, .find-us h1, .meet-pastors h1, .offerings h1, .our-facilities h1, .our-ministries h1, .our-services h1, .prayers h1, .statement h1, .upcoming-events h1, .what-to-expect h1 {
-        font-size: 30px;
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    body h2 {
+        font-size: 25px;
         margin-top: 40px;
     }
 
-    .what-to-expect p {
+    .what-to-expect p, .our-ministries p {
         /* padding: 10px; */
         margin: 10px;
         margin-bottom: 20px;
