@@ -58,16 +58,17 @@ blockquote {
 .topnav a:link, a:visited {
     color: var(--text);
     text-decoration: none;
+    /* font-weight: bold; */
 }
 
 .topnav a:hover {
     color: var(--text);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .topnav {
-    border-top-style: solid;
-    border-bottom-style: solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     font-size: auto;
     text-align: center;
     text-align: -webkit-center;
@@ -84,8 +85,9 @@ blockquote {
     top: 0;
     width: 100%;
     scrollbar-color: var(--scrollbar) transparent;
-
+    font-size: 20px;
     visibility: visible;
+    /* text-transform: uppercase; */
 }
 
 .topnav::-webkit-scrollbar {
@@ -101,10 +103,15 @@ blockquote {
 
 .topnav li {
     display: inline;
+    padding: 11px;
+}
+
+.topnav li:hover {
+    font-weight: bold;
 }
 
 .topnav a {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 
@@ -243,16 +250,58 @@ blockquote {
 } */
 
 
+/* .two-columns {
+    padding: 25px;
+    column-count: 2;
+    column-gap: 50px;
+    column-width: 5px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two-columns h1 {
+    padding: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.two-columns h2 {
+    padding: 5px 0px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.two-columns p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+    margin: 0;
+}
+
+.two-columns img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height:auto;
+    overflow:hidden;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+} */
+
+
 
 
 
 
 .about {
-    padding: 25px 25px;
+    padding: 15px;
     column-count: 2;
     column-gap: 50px;
     column-width: 5px;
-    max-width: 1600px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -272,11 +321,9 @@ blockquote {
 }
 
 .about img, .upcoming-events img {
-    /* padding: 20px 0px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* max-width: 275px; */
     max-width: 100%;
     height:auto;
     overflow:hidden;
@@ -286,7 +333,7 @@ blockquote {
 .statement {
     columns: 1;
     /* padding: 75px 25px; */
-    padding: 25px 25px;
+    padding: 15px;
     column-gap: 50px;
     column-width: 5px;
     max-width: 900px;
@@ -313,13 +360,10 @@ blockquote {
 }
 
 
-/* .statement a:link, a:visited  */
 body a:link, a:visited {
-    /* text-decoration:overline; */
     color: var(--text);
 }
 
-/* .statement a:hover */
 body a:hover {
     text-decoration: none;
     /* font-weight: bold; */
@@ -329,11 +373,9 @@ body a:hover {
 
 
 .our-services {
-    /* padding: 75px 15px; */
-    padding: 25px 25px;
+    padding: 15px;
     column-count: 2;
-    max-width: max-content;
-    /* column-gap: 50px; */
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -358,11 +400,9 @@ body a:hover {
 }
 
 .meet-pastors {
-    /* padding: 75px 25px; */
-    padding: 25px 25px;
+    padding: 15px;
     column-count: 3;
     column-gap: 100px;
-    /* column-width: 50px; */
     max-width: 1450px;
     margin-left: auto;
     margin-right: auto;
@@ -420,40 +460,30 @@ body a:hover {
 
 
 .what-to-expect {
-    /* padding: 75px 25px; */
-    padding: 25px 25px;
-    column-count: 4;
+    padding: 15px;
+    column-count: 2;
     column-gap: 50px;
-    max-width: 1600px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    /* column-width: 200px; */  
+    /* text-align: center; */
 }
 
 .what-to-expect h1 {
-    /* padding-bottom: 20px; */
     font-size: 50px;
     column-span: all;
     text-align: center;
 }
 
 .what-to-expect h2 {
-    /* font-size: 30px; */
     text-align: center;
     margin-top: auto;
-    /* padding-top: 0;
-    margin-top: 0; */
-    /* break-before: column; */
 }
 
 .what-to-expect p {
-    /* padding-top: 0;
-    padding-bottom: 10px; */
-    /* text-align: justify; */
-    margin-bottom: 60px;
-    font-size: 20px;
-    /* break-after:left; */
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .what-to-expect h3 {
@@ -466,14 +496,16 @@ body a:hover {
 
 .our-ministries {
     /* padding: 75px 25px; */
-    padding: 25px 25px;
-    column-count: 2;
-    column-gap: 80px;
+    /* padding: 25px 25px; */
+    padding: 15px;
+    /* column-count: 2; */
+    column-gap: 120px;
+    /* column-rule: 1px solid; */
     /* column-rule-style: solid;
     column-rule-width: 1px; */
     /* max-width: 1400px; */
     /* width: max-content; */
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -488,7 +520,7 @@ body a:hover {
     margin-top: auto;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     break-before: always;
 }
 
@@ -497,25 +529,66 @@ body a:hover {
     font-size: 18px;
     line-height: 1.5rem;
     text-align: justify;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 100px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
     /* line-break: anywhere; */
 }
 
 .our-ministries h3 {
-    padding: auto;
-
+    padding: 0;
+    margin: 0;
     font-size: 20px;
     font-style: italic;
-    text-align: justify;
+    text-align: center;
+    /* text-align: justify; */
+}
+
+.one-teacher {
+    columns: 1;
+    margin: auto;
 }
 
 
-.staff {
-    padding: 25px 25px;
-    /* max-width: 1200px; */
-    width: max-content;
+.two-teachers {
+    columns: 2;
+    /* width: fit-content; */
     margin: auto;
+}
+
+.three-teachers {
+    columns: 3;
+    /* width: fit-content; */
+    margin: auto;
+}
+
+.three-teachers img, .two-teachers img, .one-teacher img {
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-height: 150vh; */
+    /* width: 400px; */
+    max-height: 50vh;
+    max-width: 400px;
+    /* height: auto; */
+    overflow: hidden;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+}
+
+
+
+
+.staff {
+    padding: 10px;
+    /* width: max-content; */
+    width: min-content;
+    /* max-width: 235px; */
+    /* display: block; */
+    margin: auto;
+    border: 1px solid;
 }
 
 .staff h1 {
@@ -523,6 +596,7 @@ body a:hover {
     column-span: all;
     text-align: center;
 }
+
 
 
 .team {
@@ -632,10 +706,10 @@ body a:hover {
 .upcoming-events {
     /* padding: 75px 25px; */
     padding: 25px 25px;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    
+    text-align: center;
 }
 
 .upcoming-events h1 {
@@ -646,7 +720,7 @@ body a:hover {
 
 .upcoming-events h2, .our-facilities h2 {
     font-size: 35px;
-    margin: 5px;
+    margin: 0;
     /* margin-top: 20px; */
     margin-bottom: 20px;
     text-align: center;
@@ -671,12 +745,14 @@ body a:hover {
 .upcoming-events h3 {
     font-size: 30px;
     text-align: center;
-    margin: 0;
+    /* margin: 0; */
     margin-bottom: 10px;
 }
 
 .upcoming-events iframe {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -872,74 +948,72 @@ footer a:hover {
   }
   */
 
-  @media (max-width: 1560px) {
+
+@media (max-width: 1350px) {
     /* html {
         max-width:screen;
     } */
 
    body {
         text-align: center;
+        
     }
 
-    .what-to-expect {
-        columns: 2;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 900px;
-    }
-
-.what-to-expect img {
-    /* padding: 20px 0px; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 206px;
-    max-width: 100%;
-    height:auto;
-    overflow:hidden;
-    padding-bottom: 20px;
-    } 
-}
-
-
-@media (max-width: 1550px) {
-    /* html {
-        max-width:screen;
-    } */
-
-   body {
-        text-align: center;
-    }
-
-    .meet-pastors, .about, .our-services, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us {
+    .meet-pastors, .about, .our-services, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us,
+    .two-teachers, .three-teachers {
         columns: 1;
         margin-left: auto;
         margin-right: auto;
         max-width: 600px;
     }
 
+    .meet-pastors h2 {
+        margin-top: 45px;
+    }
+
+    .our-ministries h2 {
+        margin-top: 45px;
+        margin-bottom: 0;
+    }
+
+    .staff {
+        margin-top: 15px;
+        width: max-content;
+    }
+
     .meet-pastors img, .about img, .our-services img, .what-to-expect img, .our-ministries img, .upcoming-events img, .our-facilities img {
-    /* padding: 20px 0px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* max-height: 250px; */
     max-width: 100%;
     height:auto;
     overflow:hidden;
-    /* padding-bottom: 20px; */
     } 
+
+    .our-facilities h2 {
+        margin: 10px;
+    }
+
+    .upcoming-events iframe {
+        max-width: -webkit-fill-available;
+    }
+
+
+    .one-teacher img, .two-teachers img, .three-teachers img {
+        max-height: 40vh;
+        max-width: 300px;
+    }
 
 
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1260px) {
     .hamburger {
         display: none;
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1500px) {
     .topnav {
         visibility: hidden;
         display: none;
@@ -951,14 +1025,20 @@ footer a:hover {
     }
 
     .topnav-inline li {
-        padding: 10px;
-        font-size: 25px;
-    }
-
-
-    body p {
         padding: 15px;
+        font-size: 35px;
+        /* max-width: max-content; */
+        margin: auto;
     }
+
+}
+
+@media (max-width: 1000px) {
+
+
+    /* body p {
+        padding: 15px;
+    } */
 
     .about h1, .find-us h1, .meet-pastors h1, .offerings h1, .our-facilities h1, .our-ministries h1, .our-services h1, .prayers h1, .statement h1, .upcoming-events h1, .what-to-expect h1 {
         font-size: 40px;
@@ -976,65 +1056,15 @@ footer a:hover {
         margin-bottom: 20px;
     }
 
+    .topnav-inline li {
+        padding: 10px;
+        font-size: 25px;
+        /* max-width: max-content; */
+        /* margin: auto; */
+    }
+
     
 }
-
-
-/* @media (max-width: 1300px) {
-    html {
-        max-width:screen;
-    }
-
-    body {
-        max-width: 900px;
-        padding: 15px;
-        margin: auto;
-        font-size: medium;
-    }
-
-    .topnav {
-        
-    }
-
-    .about, .our-services, .meet-pastors, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us {
-        columns: 1;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .topnav {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        display: block;
-    }
-
-}
-
-
-@media (max-width: 414px) {
-    html {
-        max-width:screen;
-    }
-
-    body {
-        max-width: 380px;
-        padding: 15px;
-        margin: auto;
-        font-size: auto;
-    }
-
-    .about, .our-services, .meet-pastors, .what-to-expect, .our-ministries, .upcoming-events, .our-facilities, .find-us {
-        columns: 1;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 50%;
-    }
-} */
 
 
 
@@ -1043,12 +1073,21 @@ footer a:hover {
         background-color: rgb(29,29,29);
     }
 
+    .topnav-inline li:hover, .topnav li:hover, body a:hover  {
+        background-color:white;
+        color: rgb(29,29,29);
+    }
 
 }
 
 @media screen and (prefers-color-scheme: light) {
     .hamburger, .topnav-inline {
         background-color: white;
+    }
+
+    .topnav-inline li:hover, .topnav li:hover, body a:hover   {
+        background-color: rgb(29,29,29);
+        color: white;
     }
 
 }
