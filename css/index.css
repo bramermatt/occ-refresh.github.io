@@ -99,6 +99,9 @@ blockquote {
     padding-left: 0;
     margin: 5px;
     padding: 5px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .topnav li {
@@ -230,84 +233,114 @@ blockquote {
     padding: 10px;
 }
 
-
-/* .paddles {
+.hamburger img {
+    /* padding: 0; */
+    /* padding-right: 10px; */
+    
+    /* margin: auto; */
+    padding: 12px;
+    max-height: 4vh;
+    display: flex;
+    align-items: center;
 }
-.paddle {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 3em;
-}
-.left-paddle {
-	left: 0;
-}
-.right-paddle {
-	right: 0;
-}
-.hidden {
-	display: none;
-} */
 
 
-/* .two-columns {
-    padding: 25px;
-    column-count: 2;
-    column-gap: 50px;
-    column-width: 5px;
-    max-width: 1600px;
+
+.title {
+    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
 }
 
-.two-columns h1 {
+.title h1 {
     padding: auto;
+    margin-top: 50px;
     font-size: 50px;
     column-span: all;
     text-align: center;
 }
 
-.two-columns h2 {
-    padding: 5px 0px;
+.title p {
+    font-size: 18px;
+    /* text-align: justify; */
+    text-align: center;
+    padding-bottom: 20px;
     margin: 0;
-    font-size: 30px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title img {
+    /* padding: 12px; */
+    max-height: 10vh;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+
+
+
+
+.one-column {
+    padding: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
-.two-columns p {
-    font-size: 18px;
-    text-align: justify;
-    padding: 20px;
-    margin: 0;
-}
 
-.two-columns img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height:auto;
-    overflow:hidden;
-    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
-} */
-
-
-
-
-
-
-.about {
-    padding: 15px;
+.two-columns {
     column-count: 2;
     column-gap: 50px;
     column-width: 5px;
+    padding: 15px;
+}
+
+.two-columns iframe {
+    max-width: -webkit-fill-available;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.three-columns {
+    padding: 15px;
+    column-count: 3;
+    column-gap: 80px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four-columns {
+    padding: 15px;
+    column-count: 4;
+    column-gap: 50px;
+    /* max-width: fit-content; */
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+
+.about {
+    padding: 15px;
+    /* column-count: 2; */
+    /* column-gap: 50px;
+    /* column-width: 5px; */
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 .about h1 {
     padding: auto;
+    margin-top: 50px;
     font-size: 50px;
     column-span: all;
     text-align: center;
@@ -320,7 +353,7 @@ blockquote {
     margin: 0;
 }
 
-.about img, .upcoming-events img {
+.about img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -330,9 +363,13 @@ blockquote {
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
+
+
+
 .statement {
     columns: 1;
     /* padding: 75px 25px; */
+    margin-top: 50px;
     padding: 15px;
     column-gap: 50px;
     column-width: 5px;
@@ -374,7 +411,8 @@ body a:hover {
 
 .our-services {
     padding: 15px;
-    column-count: 2;
+    /* margin-top: 50px; */
+    /* column-count: 2; */
     max-width: 1400px;
     margin: auto;
 }
@@ -389,6 +427,7 @@ body a:hover {
 .our-services h2 {
     padding: 5px 0px;
     margin: 0;
+    margin-top: 20px;
     font-size: 30px;
     text-align: center;
 }
@@ -401,9 +440,11 @@ body a:hover {
 
 .meet-pastors {
     padding: 15px;
-    column-count: 3;
-    column-gap: 100px;
-    max-width: 1450px;
+    /* margin-top: 50px; */
+    /* column-count: 3;
+    column-gap: 50px;
+    column-width: auto; */
+    max-width: 1650px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -421,7 +462,7 @@ body a:hover {
     margin: 1px;
     font-size: 30px;
     margin-top: auto;
-
+    break-before: column;
 }
 
 .meet-pastors h3 {
@@ -434,7 +475,7 @@ body a:hover {
 .meet-pastors p {
     padding-top: 0;
     /* padding-bottom: 20px; */
-    max-width: 480px;
+    /* max-width: 420px; */
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
@@ -452,18 +493,23 @@ body a:hover {
     /* max-height: 150vh; */
     /* width: 400px; */
     max-height: 40vh;
-    max-width: 400px;
+    max-width: 370px;
     height:auto;
     overflow:hidden;
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
+.pastor {
+    max-width: 650px;
+}
+
 
 .what-to-expect {
     padding: 15px;
+    /* margin-top: 50px;
     column-count: 2;
-    column-gap: 50px;
-    max-width: 1000px;
+    column-gap: 20px; */
+    /* max-width: 800px; */
     margin-left: auto;
     margin-right: auto;
     /* text-align: center; */
@@ -478,10 +524,11 @@ body a:hover {
 .what-to-expect h2 {
     text-align: center;
     margin-top: auto;
+    break-before: column;
 }
 
 .what-to-expect p {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     font-size: 18px;
     text-align: justify;
 }
@@ -499,7 +546,7 @@ body a:hover {
     /* padding: 25px 25px; */
     padding: 15px;
     /* column-count: 2; */
-    column-gap: 120px;
+    /* column-gap: 120px; */
     /* column-rule: 1px solid; */
     /* column-rule-style: solid;
     column-rule-width: 1px; */
@@ -530,7 +577,7 @@ body a:hover {
     line-height: 1.5rem;
     text-align: justify;
     margin-top: 15px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
@@ -589,6 +636,7 @@ body a:hover {
     /* display: block; */
     margin: auto;
     border: 1px solid;
+    margin-bottom: 30px;
 }
 
 .staff h1 {
@@ -597,43 +645,23 @@ body a:hover {
     text-align: center;
 }
 
-
-
-.team {
-    border: 1px solid;
-    max-width: max-content;
-    /* margin: auto; */
-    padding: 20px;
-    margin: 15px;
-}
-
-.team h2 {
-    margin: 0;
+.staff h2 {
     text-align: center;
-    column-span: all;
+    margin: 1px;
     font-size: 30px;
+    margin-top: auto;
+    break-before: column;
 }
 
-.team-of-teachers {
-    /* display: flex; */
-}
-
-.teacher {
-    padding: 15px; 
+.staff h3 {
+    margin: 1px;
     text-align: center;
+    font-style: italic;
+    margin-top: auto;
 }
 
-.teacher h3 {
-    margin: 0;
-}
-
-.teacher h4 {
-    margin: 0;
-}
-
-.teacher img {
-    max-width: 220px;
-    margin-top: 10px;
+.staff p {
+    text-indent: 30px;
 }
 
 
@@ -734,7 +762,13 @@ body a:hover {
 }
 
 .upcoming-events img {
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height:auto;
+    overflow:hidden;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
 .upcoming-events blockquote, .our-facilities blockquote {
@@ -964,7 +998,11 @@ footer a:hover {
         columns: 1;
         margin-left: auto;
         margin-right: auto;
-        max-width: 600px;
+        max-width: 900px;
+    }
+
+    .two-columns, .three-columns, .four-columns {
+        columns: 1;
     }
 
     .meet-pastors h2 {
@@ -972,13 +1010,13 @@ footer a:hover {
     }
 
     .our-ministries h2 {
-        margin-top: 45px;
+        /* margin-top: 45px; */
         margin-bottom: 0;
     }
 
     .staff {
         margin-top: 15px;
-        width: max-content;
+        width: fit-content;
     }
 
     .meet-pastors img, .about img, .our-services img, .what-to-expect img, .our-ministries img, .upcoming-events img, .our-facilities img {
@@ -1007,13 +1045,13 @@ footer a:hover {
 
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1200px) {
     .hamburger {
         display: none;
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
     .topnav {
         visibility: hidden;
         display: none;
@@ -1042,7 +1080,7 @@ footer a:hover {
 
     .about h1, .find-us h1, .meet-pastors h1, .offerings h1, .our-facilities h1, .our-ministries h1, .our-services h1, .prayers h1, .statement h1, .upcoming-events h1, .what-to-expect h1 {
         font-size: 40px;
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     body h2 {
@@ -1083,6 +1121,10 @@ footer a:hover {
 @media screen and (prefers-color-scheme: light) {
     .hamburger, .topnav-inline {
         background-color: white;
+    }
+
+    .hamburger img, .topnav img {
+        filter: invert(10);
     }
 
     .topnav-inline li:hover, .topnav li:hover, body a:hover   {
