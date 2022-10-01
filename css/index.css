@@ -27,6 +27,14 @@ body.light {
 body {
     color: var(--text);
     background: var(--background);
+
+    /* background-color: aquamarine; */
+    /* background-image: url('../img/backgrounds/purple-blue.png'); */
+    /* background-image: linear-gradient(white,grey,black); */
+    /* backdrop-filter: blur(100%); */
+    /* background-repeat: repeat; */
+    /* object-fit: cover; */
+
     padding: auto;
     margin: auto;
     /*
@@ -244,6 +252,10 @@ blockquote {
     align-items: center;
 }
 
+.background-img {
+    position: relative;
+}
+
 
 
 .title {
@@ -290,6 +302,8 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+
 }
 
 
@@ -298,6 +312,10 @@ blockquote {
     column-gap: 50px;
     column-width: 5px;
     padding: 15px;
+
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .two-columns iframe {
@@ -333,7 +351,7 @@ blockquote {
     /* column-count: 2; */
     /* column-gap: 50px;
     /* column-width: 5px; */
-    max-width: 1450px;
+    /* max-width: 1450px; */
     margin-left: auto;
     margin-right: auto; 
 }
@@ -447,6 +465,8 @@ body a:hover {
     max-width: 1650px;
     margin-left: auto;
     margin-right: auto;
+
+    /* background-image: url('../img/backgrounds/sun-in-water.png'); */
 }
 
 .meet-pastors h1 {
