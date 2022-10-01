@@ -33,7 +33,7 @@ body {
     max-width: 1350px;
     min-width: 450px;
     */
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     letter-spacing: .025em;
     cursor: default;
@@ -275,7 +275,7 @@ blockquote {
 
 .title img {
     /* padding: 12px; */
-    max-height: 10vh;
+    /* max-height: 10vh; */
     /* display: flex; */
     /* align-items: center; */
 }
@@ -531,6 +531,7 @@ body a:hover {
     /* margin-bottom: 40px; */
     font-size: 18px;
     text-align: justify;
+    text-indent: 30px;
 }
 
 .what-to-expect h3 {
@@ -575,7 +576,7 @@ body a:hover {
     /* padding: 10px 0px; */
     font-size: 18px;
     line-height: 1.5rem;
-    text-align: justify;
+    /* text-align: justify; */
     margin-top: 15px;
     /* margin-bottom: 100px; */
     max-width: 520px;
@@ -662,13 +663,15 @@ body a:hover {
 
 .staff p {
     text-indent: 30px;
+    text-align: justify;
 }
 
 
 .prayers {
     /* padding: 75px 25px; */
-    padding: 25px 25px;
-    max-width: 900px;
+    /* padding: 25px 25px; */
+    padding: 15px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     
@@ -682,13 +685,15 @@ body a:hover {
 
 .prayers h2 {
     margin-top: auto;
+    margin-bottom: 0;
     font-size: 30px;
     text-align: center;
 }
 
 .prayers p {
     padding: 10px 0px;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: auto;
     /* text-align: justify; */
     text-align: center;
 }
@@ -696,11 +701,16 @@ body a:hover {
 
 .offerings {
     /* padding: 75px 25px; */
-    padding: 25px 25px;
+    /* padding: 25px 25px; */
+    padding: 15px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.offerings a:link, a:visited {
+    text-decoration: none;
 }
 
 .offerings h1 {
@@ -717,7 +727,7 @@ body a:hover {
 
 .offerings p {
     /* padding: 10px 0px; */
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -749,7 +759,7 @@ body a:hover {
 .upcoming-events h2, .our-facilities h2 {
     font-size: 35px;
     margin: 0;
-    /* margin-top: 20px; */
+    margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
     /* border-bottom: 1px solid; */
@@ -1003,6 +1013,7 @@ footer a:hover {
 
     .two-columns, .three-columns, .four-columns {
         columns: 1;
+        /* padding: 0; */
     }
 
     .meet-pastors h2 {
@@ -1030,6 +1041,7 @@ footer a:hover {
 
     .our-facilities h2 {
         margin: 10px;
+        margin-top: 40px;
     }
 
     .upcoming-events iframe {
@@ -1078,9 +1090,17 @@ footer a:hover {
         padding: 15px;
     } */
 
-    .about h1, .find-us h1, .meet-pastors h1, .offerings h1, .our-facilities h1, .our-ministries h1, .our-services h1, .prayers h1, .statement h1, .upcoming-events h1, .what-to-expect h1 {
+    /* .about h1, .find-us h1, .meet-pastors h1, .offerings h1, .our-facilities h1, .our-ministries h1, .our-services h1, .prayers h1, .statement h1, .upcoming-events h1, .what-to-expect h1 {
         font-size: 40px;
         margin-top: 60px;
+    } */
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    body h1 {
+        font-size: 30px;
     }
 
     body h2 {
