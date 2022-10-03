@@ -1,0 +1,509 @@
+html {
+    /* max-width: 1750px; */
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+/* * {
+    box-sizing: border-box;
+  } */
+
+body.dark {
+    --text: white;
+    --background: black;
+}
+
+body.light {
+    --text: dark;
+    --background: white;
+
+}
+
+/* body h1 {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+} */
+
+body {
+    color: var(--text);
+    background: var(--background);
+
+    /* background-color: aquamarine; */
+    /* background-image: url('../img/backgrounds/purple-blue.png'); */
+    /* background-image: linear-gradient(white,grey,black); */
+    /* backdrop-filter: blur(100%); */
+    /* background-repeat: repeat; */
+    /* object-fit: cover; */
+
+    padding: auto;
+    margin: auto;
+    /*
+    max-width: 1350px;
+    min-width: 450px;
+    */
+    padding-bottom: 80px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    letter-spacing: .025em;
+    cursor: default;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: var(--text);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+    opacity: 40%;
+  }
+  
+  #myBtn:hover {
+    color: #555; /* Add a dark-grey background on hover */
+    opacity: 100%;
+  }
+
+.hamburger {
+    display: flex;
+    font-size: 45px;
+    padding-left: 15px;
+    border-bottom: .5px solid;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hamburger img {
+    /* padding: 0; */
+    /* padding-right: 10px; */
+    
+    /* margin: auto; */
+    filter: invert(10);
+    padding: 12px;
+    max-height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    /* background-color: #111; */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-decoration: none;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    /* padding: 8px 8px 8px 32px; */
+    padding-left: 15px;
+    padding-top: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    /* color: #818181; */
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    /* color: #f1f1f1; */
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 40;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav ul {
+    list-style: none;
+    /* font-size: 30px; */
+    /* letter-spacing: .23rem; */
+    line-height: 40px;
+    padding: 0;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    /* padding: 20px; */
+  }
+
+
+  blockquote {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding: 0 1em; */
+    color: #777;
+    /* border-left: .25em solid #ddd; */
+}
+
+
+.intro {
+    background-image: url('../img/about/occ-img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* object-fit: scale-down; */
+    padding: 105px;
+
+    color: white;
+}
+
+.intro h1 {
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+    filter: drop-shadow(2px 2px #111);
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    filter: drop-shadow(2px 2px #111);
+}
+
+.title {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.title h1 {
+    padding: auto;
+    margin-top: 50px;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.title p {
+    font-size: 18px;
+    /* text-align: justify; */
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two-columns {
+    column-count: 2;
+    column-gap: 50px;
+    column-width: 5px;
+    padding: 15px;
+
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two-columns iframe {
+    max-width: -webkit-fill-available;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.four-columns {
+    padding: 15px;
+    column-count: 4;
+    column-gap: 50px;
+    /* max-width: fit-content; */
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-location {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 650px; */
+}
+
+.our-location h1 {
+    font-size: 50px;
+    text-align: center;
+    column-span: all;
+}
+
+.our-location h2 {
+    /* font-size: 30px; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin:auto;
+    /* margin-top: auto; */
+    /* break-after: column; */
+}
+
+.our-location img {
+    max-width: 100%;
+    max-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.what-to-expect {
+    padding: 15px;
+    /* margin-top: 50px;
+    column-count: 2;
+    column-gap: 20px; */
+    /* max-width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+
+.what-to-expect h1 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.what-to-expect h2 {
+    text-align: center;
+    margin-top: auto;
+    break-before: column;
+}
+
+.what-to-expect p {
+    /* margin-bottom: 40px; */
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.what-to-expect h3 {
+    /* padding: auto; */
+    /* font-size: 20px; */
+    font-style: italic;
+    text-align: justify;
+}
+
+#our-services {
+    background-image: url('../img/backgrounds/watercolor.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.our-services {
+    padding: 15px;
+    /* margin-top: 50px; */
+    /* column-count: 2; */
+    max-width: 1400px;
+    margin: auto;
+}
+
+.our-services h1 {
+    padding: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.our-services h2 {
+    padding: 5px 0px;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.our-services p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+}
+
+
+.statement {
+    columns: 1;
+    /* padding: 75px 25px; */
+    margin-top: 50px;
+    padding: 15px;
+    column-gap: 50px;
+    column-width: 5px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statement h1 {
+    padding: auto;
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.statement p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.statement a {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1350px) {
+    .four-columns, .two-columns {
+        columns: 1;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 700px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    body h1 {
+        font-size: 30px;
+    }
+
+    body h2 {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .what-to-expect p {
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 880px) {
+
+    .intro {
+        padding: 55px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+    
+}
+
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    
+    .hamburger {
+        filter: invert(100);
+    }
+
+    .sidenav {
+        background-color: white;
+    }
+
+    .sidenav a {
+        color: darkgrey;
+    }
+
+    body a:hover  {
+        background-color:white;
+        color: rgb(29,29,29);
+    }
+
+    body a:link, a:visited {
+        color: var(--text);
+    }
+    
+    body a:hover {
+        text-decoration: none;
+        /* font-weight: bold; */
+        /* text-decoration:dashed; */
+    }
+
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+    
+    
+    .sidenav {
+        background-color: rgb(29,29,29);
+    }
+
+    .sidenav a:link, .sidenav a:visited {
+        color: darkgrey;
+        text-decoration: none;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    
+    body a:link, a:visited {
+        color: var(--text);
+    }
+
+    body a:hover   {
+        background-color: rgb(29,29,29);
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+}
