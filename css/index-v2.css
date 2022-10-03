@@ -295,7 +295,8 @@ body {
 .two-columns h2 {
     text-align: center;
     margin-top: auto;
-    break-before: column;
+    /* break-before: column; */
+    break-before: auto;
     margin-bottom: auto;
     padding-bottom: 6px;
     border-bottom: 1px solid;
@@ -485,7 +486,8 @@ body {
     margin: 1px;
     font-size: 30px;
     margin-top: auto;
-    break-before: column;
+    /* break-before: column; */
+    break-before: auto;
 }
 
 .meet-pastors h3 {
@@ -708,17 +710,17 @@ body {
 }
 
 .footer li {
-    padding: 5px;
+    padding: 10px;
 }
 
 .footer a:link, .footer a:visited {
-    padding: 30px;
+    /* padding: 30px; */
     text-decoration: none;
     color: var(--text);
 }
 
 .footer a:hover {
-    text-decoration: overline;
+    text-decoration: underline;
     transition: 0.5s;
 }
 
@@ -789,7 +791,7 @@ body {
 
     body h1 {
         font-size: 30px;
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     body h2 {
