@@ -48,7 +48,6 @@ body {
 }
 
 
-
 #myBtn {
     display: none;
     position: fixed;
@@ -57,25 +56,29 @@ body {
     z-index: 99;
     border: none;
     outline: none;
-    color: var(--text);
+    /* color: var(--text); */
+    color:black;
     cursor: pointer;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
-    font-size: 18px;
-    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+    font-size: 48px;
+    /* filter: drop-shadow(0 0 1px rgb(0, 0, 0)); */
     opacity: 40%;
   }
   
   #myBtn:hover {
-    color: #555; /* Add a dark-grey background on hover */
+    color: #555; 
+    background-color: white;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+    /* Add a dark-grey background on hover */
     opacity: 100%;
   }
 
-.hamburger {
+.hamburger-mobile {
     display: flex;
     font-size: 45px;
     padding-left: 15px;
-    border-bottom: .5px solid;
+    /* border-bottom: .5px solid; */
     position: sticky;
     left: 0;
     top: 0;
@@ -84,14 +87,33 @@ body {
     z-index: 1;
     background-color: white;
     cursor: pointer;
+    visibility: hidden;
+    display: none;
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
+  }
+
+.hamburger {
+    display: flex;
+    font-size: 45px;
+    padding-left: 15px;
+    /* border-bottom: .5px solid; */
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
 }
 
-.hamburger img {
+.hamburger img, .hamburger-mobile img {
     /* padding: 0; */
     /* padding-right: 10px; */
     
     /* margin: auto; */
-    filter: invert(10);
+    /* filter: invert(10); */
     padding: 12px;
     max-height: 4vh;
     display: flex;
@@ -108,7 +130,7 @@ body {
     left: 0;
     /* background-color: #111; */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 65px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     text-decoration: none;
   }
@@ -133,7 +155,7 @@ body {
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
-    top: 40;
+    top: 30;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -174,6 +196,7 @@ body {
     padding: 105px;
 
     color: white;
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
 }
 
 .intro h1 {
@@ -194,14 +217,15 @@ body {
     max-width: max-content;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding: 15px;
 }
 
 .title h1 {
     padding: auto;
-    margin-top: 50px;
-    font-size: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 60px;
     column-span: all;
     text-align: center;
 }
@@ -210,8 +234,8 @@ body {
     font-size: 18px;
     /* text-align: justify; */
     text-align: center;
-    padding-bottom: 20px;
-    margin: 0;
+    /* padding-bottom: 20px; */
+    margin: auto;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -221,9 +245,9 @@ body {
     column-count: 2;
     column-gap: 50px;
     column-width: 5px;
-    padding: 15px;
+    /* padding: 15px; */
 
-    max-width: 1450px;
+    max-width: 1550px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -233,17 +257,55 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 
 .four-columns {
     padding: 15px;
+    /* padding-bottom: 50px; */
     column-count: 4;
-    column-gap: 50px;
+    /* column-gap: 50px; */
     /* max-width: fit-content; */
-    max-width: 1400px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.four-columns h1, .two-columns h1 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.two-columns h2 {
+    text-align: center;
+    margin-top: auto;
+    break-before: column;
+    margin-bottom: auto;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four-columns h2 {
+    text-align: center;
+    margin-top: auto;
+    /* break-before: column; */
+    margin-bottom: auto;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+    
+}
+
+.four-columns p {
+    /* margin-bottom: 40px; */
+    margin: 5px;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
 }
 
 .our-location {
@@ -251,12 +313,25 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* max-width: 650px; */
+    /* color:white; */
+
+    /* background-image: url('../img/backgrounds/sun-in-water.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: palevioletred; */
 }
 
 .our-location h1 {
     font-size: 50px;
     text-align: center;
     column-span: all;
+    /* filter: drop-shadow(1px 2px #111); */
+}
+
+.our-location p {
+    text-align: center;
+    /* filter: drop-shadow(1px 1px #111); */
 }
 
 .our-location h2 {
@@ -265,6 +340,9 @@ body {
     margin-right: auto;
     text-align: center;
     margin:auto;
+    /* filter: drop-shadow(1px 1px #111); */
+    
+
     /* margin-top: auto; */
     /* break-after: column; */
 }
@@ -277,42 +355,27 @@ body {
     display: block;
 }
 
-
-.what-to-expect {
-    padding: 15px;
-    /* margin-top: 50px;
-    column-count: 2;
-    column-gap: 20px; */
-    /* max-width: 800px; */
-    margin-left: auto;
-    margin-right: auto;
-    /* text-align: center; */
-}
-
-.what-to-expect h1 {
-    font-size: 50px;
-    column-span: all;
-    text-align: center;
-}
-
-.what-to-expect h2 {
-    text-align: center;
-    margin-top: auto;
+.item, .item-big {
     break-before: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+    background-color: white;
+    /* box-shadow: 15px 15px 0 -4px white, 15px 15px black; */
 }
 
-.what-to-expect p {
-    /* margin-bottom: 40px; */
-    font-size: 18px;
-    text-align: justify;
-    text-indent: 30px;
+.item img {
+    max-height: 15vh;
+    width: 100%;
+    object-fit: cover;
+    /* box-shadow: inset 3px #000000; */
 }
 
-.what-to-expect h3 {
-    /* padding: auto; */
-    /* font-size: 20px; */
-    font-style: italic;
-    text-align: justify;
+.item-big img {
+    max-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    /* box-shadow: inset 3px #000000; */
 }
 
 #our-services {
@@ -339,8 +402,8 @@ body {
 
 .our-services h2 {
     padding: 5px 0px;
-    margin: 0;
-    margin-top: 20px;
+    /* margin: 0; */
+    /* margin-top: 20px; */
     font-size: 30px;
     text-align: center;
 }
@@ -349,6 +412,7 @@ body {
     font-size: 20px;
     text-align: center;
     padding: 0;
+    margin: 5px;
 }
 
 
@@ -390,6 +454,15 @@ body {
         margin-right: auto;
         max-width: 700px;
     }
+
+    .item, .item-big {
+        break-before: avoid-column;
+    }
+
+    .four-columns h2, .two-columns h2, .our-location h2 {
+        break-before: avoid-column;
+        margin-bottom: auto;
+    }
     
 }
 
@@ -405,13 +478,13 @@ body {
 
     body h2 {
         font-size: 25px;
-        margin-top: 40px;
+        /* margin-top: 40px; */
+        text-align: center;
+        /* padding: 10px; */
+        margin: auto;
     }
 
-    .what-to-expect p {
-        margin: 10px;
-        margin-bottom: 20px;
-    }
+
 
     
 }
@@ -431,6 +504,22 @@ body {
     .intro h2 {
         font-size: 20px;
     }
+
+    .hamburger {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hamburger-mobile {
+        display: flex;
+        visibility: visible;
+    }
+
+    .sidenav a {
+        padding-left: 35px;
+        padding-top: 15px;
+    }
+
     
 }
 
@@ -440,37 +529,48 @@ body {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-
-
   }
 
   @media screen and (prefers-color-scheme: dark) {
     
-    .hamburger {
-        filter: invert(100);
+    .hamburger, .hamburger-mobile {
+        
+        background-color: #111;
     }
+
+
 
     .sidenav {
-        background-color: white;
+        background-color: rgb(29,29,29);
     }
 
-    .sidenav a {
+    .sidenav a:link, .sidenav a:visited {
         color: darkgrey;
+        text-decoration: none;
     }
+
+
 
     body a:hover  {
-        background-color:white;
-        color: rgb(29,29,29);
+        background-color: white;
+        /* color: rgb(29,29,29); */
+        color:#111;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
     }
 
-    body a:link, a:visited {
+    body a:link, body a:visited {
         color: var(--text);
+
     }
     
     body a:hover {
         text-decoration: none;
-        /* font-weight: bold; */
-        /* text-decoration:dashed; */
+    }
+
+    .item, .item-big {
+        background-color: #111;
     }
 
 
@@ -478,6 +578,9 @@ body {
 
 @media screen and (prefers-color-scheme: light) {
     
+    .hamburger img, .hamburger-mobile img {
+        filter: invert(10);
+    }
     
     .sidenav {
         background-color: rgb(29,29,29);
