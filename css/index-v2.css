@@ -236,8 +236,36 @@ body {
     text-align: center;
     /* padding-bottom: 20px; */
     margin: auto;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     /* max-width: 900px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one-column {
+    /* max-width: 800px; */
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.one-column p {
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.one-column h2 {
+    text-align: center;
+    margin-top: auto;
+    /* break-before: column; */
+    break-before: auto;
+    margin-bottom: auto;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
 }
@@ -270,8 +298,19 @@ body {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+}
 
-
+.three-columns h2 {
+    text-align: center;
+    margin-top: auto;
+    /* break-before: column; */
+    break-before: auto;
+    margin-bottom: auto;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -300,7 +339,7 @@ body {
     margin-bottom: auto;
     padding-bottom: 6px;
     border-bottom: 1px solid;
-    max-width: max-content;
+    /* width: max-content; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -394,6 +433,81 @@ body {
     /* box-shadow: inset 3px #000000; */
 }
 
+
+.item-wide {
+    break-before: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+    background-color: white;
+    
+    /* background-image: url('../img/backgrounds/lan2.jpg'); */
+
+}
+
+.item-wide img {
+    max-height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    /* box-shadow: inset 3px #000000; */
+}
+
+.text-on-img {
+    margin-bottom: -10vh;
+    padding: 30px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-decoration: none;
+    z-index: 0;
+    position: relative;
+    bottom: 25vh;
+}
+
+.text-on-img-high {
+    margin-bottom: -14vh;
+    padding: 30px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-decoration: none;
+    z-index: 0;
+    position: relative;
+    bottom: 48vh;
+}
+
+.subtitle {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    font-family: 'Sharp Grotesk',sans-serif;
+    color: #000;
+    font-size: 11px;
+    /* line-height: 11px; */
+    font-weight: 500;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    /* border-color: #fff; */
+    background-color: #fff;
+    max-width: 500px;
+    /* min-width: 300px; */
+    /* width: max-content; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-on-img p {
+    display: block;
+    margin: 5px;
+}
+
 #our-services {
     background-image: url('../img/backgrounds/watercolor.jpeg');
     background-repeat: no-repeat;
@@ -483,7 +597,7 @@ body {
 
 .meet-pastors h2 {
     text-align: center;
-    margin: 1px;
+    margin-bottom: 5px;
     font-size: 30px;
     margin-top: auto;
     /* break-before: column; */
@@ -640,6 +754,7 @@ input[type=text], select {
     font-size: 50px;
     column-span: all;
     text-align: center;
+    margin: 0;
 }
 
 .offerings h2 {
@@ -689,7 +804,7 @@ input[type=text], select {
 .upcoming-events h2 {
     font-size: 35px;
     margin: 0;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 20px;
     text-align: center;
     /* border-bottom: 1px solid; */
@@ -732,14 +847,68 @@ input[type=text], select {
 }
 
 
+.our-facilities {
+    /* padding: 75px 25px; */
+    /* padding: 25px 25px; */
+    /* column-count: 3; */
+    column-gap: 75px;
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* column-rule-style: solid;
+    column-rule-width: 1px; */
+
+    background-image: url('../img/backgrounds/sun-in-water.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.our-facilities h1 {
+    font-size: 50px;
+    margin: 10px;
+    column-span: all;
+    text-align: center;
+}
+
+.our-facilities h2 {
+    font-size: 35px;
+    /* margin: 0; */
+    /* margin-top: 40px; */
+    margin-bottom: 20px;
+    text-align: center;
+    /* border-bottom: 1px solid; */
+}
+
+.our-facilities p {
+    font-size: 20px;
+    margin: 5px;
+    text-align: justify;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-facilities h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+/* .our-facilities img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+} */
+
+
 .footer {
     display: flex;
     align-items: center;
-    /* font-size: 45px; */
-    /* padding-left: 15px; */
-    /* border-bottom: .5px solid; */
-    /* position: sticky; */
-    /* left: 0; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -810,7 +979,7 @@ input[type=text], select {
         padding: 0;
     }
 
-    .three-columns, .meet-pastors {
+    .three-columns, .meet-pastors, .one-column {
         columns: 1;
         margin-left: auto;
         margin-right: auto;
@@ -823,13 +992,13 @@ input[type=text], select {
         max-width: 700px;
     }
 
-    .item, .item-big {
+    .item, .item-big, .item-wide {
         break-before: avoid-column;
     }
 
     .four-columns h2, .three-columns h2, .two-columns h2, .our-location h2 {
         break-before: avoid-column;
-        margin-bottom: auto;
+        /* margin-bottom: auto; */
     }
 }
 
@@ -884,6 +1053,14 @@ input[type=text], select {
     .upcoming-events iframe {
         max-height: 600px;
     }
+
+
+    .text-on-img, .text-on-img-high {
+        position: inherit;
+        bottom: 0;
+        margin-bottom: 0;
+        padding: 10px;
+    }
     
 }
 
@@ -926,8 +1103,15 @@ input[type=text], select {
         color: rgb(29,29,29);
         text-decoration: none;
     } 
-    .item, .item-big {
+    .item, .item-big, .item-wide {
         background-color: #111;
+        border: 1px solid white;
+    }
+
+    .subtitle {
+        background-color: #111;
+        color: white;
+        border: 1px solid white;
     }
 
 
