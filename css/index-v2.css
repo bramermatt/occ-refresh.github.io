@@ -693,7 +693,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-color: rgb(29,29,29);
+    background-color: rgb(9, 9, 9);
     color: white;
     cursor: pointer;
     justify-content: center;
@@ -862,26 +862,19 @@ body {
         text-decoration: none;
     }
 
-
-
-    body a:hover  {
-        background-color: white;
-        /* color: rgb(29,29,29); */
-        color:#111;
-    }
     .sidenav a:hover {
         color: #f1f1f1;
     }
 
-    body a:link, body a:visited {
+    .title a:link, a:visited, .item a:link, .item a:visited {
         color: var(--text);
-
     }
-    
-    body a:hover {
+
+    .title a:hover, .item a:hover   {
+        background-color: white;
+        color: rgb(29,29,29);
         text-decoration: none;
-    }
-
+    } 
     .item, .item-big {
         background-color: #111;
     }
