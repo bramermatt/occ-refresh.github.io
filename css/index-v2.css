@@ -435,7 +435,7 @@ body {
 
 
 .item-wide {
-    break-before: column;
+    /* break-before: column; */
     padding: 10px;
     margin-bottom: 20px;
     border: solid 2px black;
@@ -445,41 +445,29 @@ body {
 
 }
 
+.item-wide h2 {
+    /* break-before: column; */
+}
+
 .item-wide img {
-    max-height: 90vh;
+    max-height: 80vh;
     width: 100%;
     object-fit: cover;
     /* box-shadow: inset 3px #000000; */
 }
 
 .text-on-img {
-    margin-bottom: -10vh;
-    padding: 30px;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    background-position: 50% 50%;
-    background-size: cover;
-    text-decoration: none;
-    z-index: 0;
-    position: relative;
-    bottom: 25vh;
+    position: inherit;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 10px;
 }
 
 .text-on-img-high {
-    margin-bottom: -14vh;
-    padding: 30px;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    background-position: 50% 50%;
-    background-size: cover;
-    text-decoration: none;
-    z-index: 0;
-    position: relative;
-    bottom: 48vh;
+    position: inherit;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 10px;
 }
 
 .subtitle {
@@ -849,7 +837,7 @@ input[type=text], select {
     margin-right: auto;
     text-align: center;
 
-    /* background-image: url('../img/backgrounds/purple-blue.png'); */
+    background-image: url('../img/backgrounds/events.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -935,13 +923,11 @@ input[type=text], select {
 }
 
 .our-facilities h2 {
-    font-size: 35px;
-    /* margin: 0; */
-    /* margin-top: 40px; */
-    margin-bottom: 20px;
-    text-align: center;
-    /* border-bottom: 1px solid; */
+    margin-bottom: 10px;
+    font-size: 30px;
+    /* break-before: column; */
 }
+
 
 .our-facilities p {
     font-size: 20px;
@@ -1059,7 +1045,7 @@ input[type=text], select {
         break-before: avoid-column;
     }
 
-    .four-columns h2, .three-columns h2, .two-columns h2, .our-location h2 {
+    .four-columns h2, .three-columns h2, .two-columns h2, .our-location h2 , .one-column h2 {
         break-before: avoid-column;
         /* margin-bottom: auto; */
     }
