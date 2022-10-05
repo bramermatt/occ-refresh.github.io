@@ -133,6 +133,7 @@ body {
     padding-top: 65px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     text-decoration: none;
+
   }
   
   /* The navigation menu links */
@@ -145,6 +146,7 @@ body {
     /* color: #818181; */
     display: block;
     transition: 0.3s;
+
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -167,6 +169,7 @@ body {
     /* letter-spacing: .23rem; */
     line-height: 40px;
     padding: 0;
+    text-transform: uppercase;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -339,7 +342,7 @@ body {
     margin-bottom: auto;
     padding-bottom: 6px;
     border-bottom: 1px solid;
-    /* width: max-content; */
+    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
 }
@@ -450,7 +453,7 @@ body {
 }
 
 .item-wide img {
-    max-height: 80vh;
+    max-height: 90vh;
     width: 100%;
     object-fit: cover;
     /* box-shadow: inset 3px #000000; */
@@ -953,6 +956,47 @@ input[type=text], select {
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 } */
 
+.our-staff h3 {
+    text-align: center;
+    font-style: italic;
+    margin: 5px;
+}
+
+
+.img-hover {
+    position: relative;
+    /* width: 50%; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.overlay p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-hover:hover .overlay {
+    opacity: 1;
+  }
+
 
 .footer {
     position: relative;
@@ -976,6 +1020,7 @@ input[type=text], select {
     margin: 50px;
     /* margin-bottom: 20px; */
     padding: 0;
+    text-transform: uppercase;
 }
 
 .footer li {
@@ -986,6 +1031,7 @@ input[type=text], select {
     /* padding: 30px; */
     text-decoration: none;
     color: var(--text);
+    /* margin-bottom: 2px; */
 }
 
 .footer a:hover {
@@ -1032,6 +1078,7 @@ input[type=text], select {
         columns: 1;
         margin-left: auto;
         margin-right: auto;
+        max-width: 800px;
     }
 
     .four-columns, .two-columns {
@@ -1110,6 +1157,11 @@ input[type=text], select {
         margin-bottom: 0;
         padding: 10px;
     }
+
+    .overlay p {
+        font-size: 14px;
+        line-height: 14px;
+    }
     
 }
 
@@ -1147,7 +1199,7 @@ input[type=text], select {
         color: var(--text);
     }
 
-    .title a:hover, .item a:hover   {
+    .title a:hover, .item a:hover, .overlay   {
         background-color: white;
         color: rgb(29,29,29);
         text-decoration: none;
@@ -1190,7 +1242,7 @@ input[type=text], select {
         color: var(--text);
     }
 
-    .title a:hover, .item a:hover   {
+    .title a:hover, .item a:hover, .overlay   {
         background-color: rgb(29,29,29);
         color: white;
         text-decoration: none;
