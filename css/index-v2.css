@@ -362,7 +362,7 @@ body {
     margin: 5px;
     font-size: 18px;
     text-align: justify;
-    text-indent: 30px;
+    /* text-indent: 30px; */
 }
 
 .our-location {
@@ -438,7 +438,7 @@ body {
 
 
 .item-wide {
-    /* break-before: column; */
+    break-before: column;
     padding: 10px;
     margin-bottom: 20px;
     border: solid 2px black;
@@ -1158,9 +1158,8 @@ input[type=text], select {
         padding: 10px;
     }
 
-    .overlay p {
-        font-size: 14px;
-        line-height: 14px;
+    .overlay  {
+        display: none;
     }
     
 }
