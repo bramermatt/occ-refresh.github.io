@@ -347,7 +347,7 @@ body {
     margin-right: auto;
 }
 
-.four-columns h2 {
+.four-columns h2, .five-columns h2 {
     text-align: center;
     margin-top: auto;
     /* break-before: column; */
@@ -364,6 +364,16 @@ body {
     text-align: justify;
     /* text-indent: 30px; */
 }
+
+.five-columns {
+    columns: 5;
+    padding: 15px;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .our-location {
     padding: 15px;
@@ -1074,7 +1084,7 @@ input[type=text], select {
         padding: 0;
     }
 
-    .three-columns, .meet-pastors, .one-column {
+    .three-columns, .meet-pastors, .one-column, .five-columns {
         columns: 1;
         margin-left: auto;
         margin-right: auto;
