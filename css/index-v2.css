@@ -1209,11 +1209,17 @@ input[type=text], select {
         color: var(--text);
     }
 
-    .title a:hover, .item a:hover, .overlay   {
+    .title a:hover, .item a:hover, .overlay {
         background-color: white;
         color: rgb(29,29,29);
         text-decoration: none;
     } 
+
+    .overlay p {
+        color: rgb(29,29,29);
+    }
+
+
     .item, .item-big, .item-wide {
         background-color: #111;
         border: 1px solid white;
