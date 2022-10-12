@@ -1063,8 +1063,11 @@ input[type=text], select {
     justify-content: center;
 }
 
+.more-links {
+    display: none;
+}
 
-.links, .more-links, .social-links, .connect {
+.links, .social-links, .connect {
     flex: 1 auto;
     padding: 15px;
 }
