@@ -76,7 +76,8 @@ body {
 
 .hamburger-mobile {
     display: flex;
-    font-size: 45px;
+    align-items: center;
+    font-size: 30px;
     padding-left: 15px;
     /* border-bottom: .5px solid; */
     position: sticky;
@@ -94,7 +95,8 @@ body {
 
 .hamburger {
     display: flex;
-    font-size: 45px;
+    align-items: center;
+    font-size: 30px;
     padding-left: 15px;
     /* border-bottom: .5px solid; */
     position: sticky;
@@ -424,7 +426,7 @@ body {
 }
 
 .item, .item-big {
-    /* break-before: column; */
+    break-before: column;
     padding: 10px;
     margin-bottom: 20px;
     border: solid 2px black;
@@ -448,7 +450,7 @@ body {
 
 
 .item-wide {
-    /* break-before: column; */
+    break-before: column;
     padding: 10px;
     margin-bottom: 20px;
     border: solid 2px black;
@@ -1006,7 +1008,82 @@ input[type=text], select {
   }
 
 
-.footer {
+  .footer {
+    /* width: 100%; */
+    padding-right: 10%;
+    padding-left: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    /* border-top: 1px solid; */
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
+    color: var(--text);
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer ul {
+    list-style: none;
+
+    padding-left: 0;
+    /* text-align: center; */
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+
+ .footer li {
+    padding: 8px;
+ }
+
+ .footer a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    /* font-weight: bold; */
+}
+
+.foot-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+.links, .more-links, .social-links, .connect {
+    flex: 1 auto;
+    padding: 15px;
+}
+
+.links li, .more-links li, .social-links li, .connect li {
+    flex: 1 auto;
+    /* width: max-content; */
+}
+
+.foot-buttons h1 {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 0;
+    border-bottom: 1px solid currentColor;
+    margin: 15px 1px .75em;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* .footer {
     position: relative;
     display: flex;
     align-items: center;
@@ -1018,7 +1095,6 @@ input[type=text], select {
     color: white;
     cursor: pointer;
     justify-content: center;
-    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
 }
 
 .footer ul {
@@ -1026,7 +1102,6 @@ input[type=text], select {
     text-align: center;
     display: flex;
     margin: 50px;
-    /* margin-bottom: 20px; */
     padding: 0;
     text-transform: uppercase;
 }
@@ -1036,10 +1111,8 @@ input[type=text], select {
 }
 
 .footer a:link, .footer a:visited {
-    /* padding: 30px; */
     text-decoration: none;
     color: var(--text);
-    /* margin-bottom: 2px; */
 }
 
 .footer a:hover {
@@ -1047,12 +1120,10 @@ input[type=text], select {
     transition: 0.5s;
 }
 
-
-
 .footer img {
     max-height: 10vh;
     padding: 10px;
-}
+} */
 
 
 /* @media screen and (max-width: 1350px) {
@@ -1076,6 +1147,8 @@ input[type=text], select {
     
 } */
 
+
+
 @media screen and (max-width: 1250px) {
     .footer ul {
         display: inline;
@@ -1086,7 +1159,7 @@ input[type=text], select {
         columns: 1;
         margin-left: auto;
         margin-right: auto;
-        max-width: 800px;
+        /* max-width: 800px; */
     }
 
     .four-columns, .two-columns {
@@ -1100,7 +1173,7 @@ input[type=text], select {
         break-before: avoid-column;
     }
 
-    .four-columns h2, .three-columns h2, .two-columns h2, .our-location h2 , .one-column h2 {
+    .four-columns h2, .three-columns h2, .two-columns h2, .our-location h2 , .one-column h2, .our-facilities h2 {
         break-before: avoid-column;
         /* margin-bottom: auto; */
     }
@@ -1189,7 +1262,7 @@ input[type=text], select {
 
 
 
-    .sidenav {
+    .sidenav, .footer {
         background-color: rgb(29,29,29);
     }
 
@@ -1206,7 +1279,7 @@ input[type=text], select {
         color: var(--text);
     }
 
-    .title a:hover, .item a:hover, .overlay {
+    .title a:hover, .item a:hover, .overlay, .footer li:hover {
         background-color: white;
         color: rgb(29,29,29);
         text-decoration: none;
@@ -1255,7 +1328,7 @@ input[type=text], select {
         color: var(--text);
     }
 
-    .title a:hover, .item a:hover, .overlay   {
+    .title a:hover, .item a:hover, .overlay, .footer li:hover   {
         background-color: rgb(29,29,29);
         color: white;
         text-decoration: none;
