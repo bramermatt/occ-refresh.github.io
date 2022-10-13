@@ -1242,6 +1242,9 @@ input[type=text], select {
         padding-top: 15px;
     }
 
+    .our-services iframe {
+        height: 240px;
+    }
 
     .upcoming-events iframe {
         max-height: 600px;
