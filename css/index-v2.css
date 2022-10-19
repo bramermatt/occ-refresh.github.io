@@ -1347,7 +1347,7 @@ input[type=text], select {
 
 @media screen and (prefers-color-scheme: light) {
     
-    .hamburger img, .hamburger-mobile img {
+    .hamburger img, .hamburger-mobile img, .footer img {
         filter: invert(10);
     }
     
@@ -1374,6 +1374,7 @@ input[type=text], select {
         color: white;
         text-decoration: none;
     } 
+
 
     
     /* body a:link, a:visited {
