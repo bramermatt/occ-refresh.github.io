@@ -34,12 +34,12 @@
             <!-- <a href="#what-to-expect"><li>What to Expect</li></a> -->
             <!-- <li><a href="#our-staff">Our Staff</a></li> -->
 
-            <a href="../index-v2.html"><li>Home</li></a>
+            <a href="../index.html"><li>Home</li></a>
             <a href="../html/our-history.html"><li>Our History</li></a>
             <a href="../html/meet-our-pastors.html"><li>Meet Our Pastors</li></a>
             <a href="../html/staff.html"><li>Our Staff</li></a>
             <a href="../html/ministries.html"><li>Ministries</li></a>
-            <a href="../html/connect.html"><li>Connect</li></a>
+            <a href="../html/connect.html" class="active"><li>Connect</li></a>
     
             <!-- <a href=""><img src="../img/occ-favicon.png" alt="logo"></a> -->
             <!-- <li>One Community Church Indiana</li> -->
@@ -99,8 +99,7 @@
         border-radius: 10px;
         ">
         <div style="padding: 20px;">
-        <a target="_blank" href="mailto:andy@onecommunitychurch.com?subject=Connect with One Community Church
-        &body=Please fill out the information below to Connect with One Community Church!%0D%0A%0D%0A%0D%0AYour Name:%0D%0A%0D%0AYour Email:%0D%0A%0D%0AYour Phone: %0D%0A%0D%0A%0D%0AThank you so much for responding!" style="
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScMjB4WOonUZl6GeC7wZnYWrJmF5OTvE_90fhHpiu9AJBHWNQ/viewform" target="_blank" style="
           display: inline-block;
           line-height: 48px;
           height: 48px;
@@ -117,40 +116,7 @@
       </div>
     </div>
       
-        <script>
-          function showCheckoutWindow(e) {
-            e.preventDefault();
-      
-            const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
-            const title = 'Square Online Checkout';
-      
-            // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
-            const topWindow = window.top ? window.top : window;
-      
-            // Fixes dual-screen position                                Most browsers          Firefox
-            const dualScreenLeft = topWindow.screenLeft !==  undefined ? topWindow.screenLeft : topWindow.screenX;
-            const dualScreenTop = topWindow.screenTop !==  undefined   ? topWindow.screenTop  : topWindow.screenY;
-      
-            const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-            const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-      
-            const h = height * .75;
-            const w = 500;
-      
-            const systemZoom = width / topWindow.screen.availWidth;
-            const left = (width - w) / 2 / systemZoom + dualScreenLeft;
-            const top = (height - h) / 2 / systemZoom + dualScreenTop;
-            const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
-      
-            if (window.focus) newWindow.focus();
-          }
-      
-          // This overrides the default checkout button click handler to show the embed modal
-          // instead of opening a new tab with the given link url
-          document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
-            showCheckoutWindow(e);
-          });
-        </script>
+
       </div>
   
         <!-- <a href="https://squareup.com/terminal/" target="_blank"><img src="img/offerings/offering-icon.jpg" alt="offering-icon"></a> -->
@@ -164,12 +130,12 @@
       <div class="links">
           <h1>Site Links</h1>
           <ul>
-            <a href="../index-v2.html"><li>Home</li></a>
+            <a href="../index.html"><li>Home</li></a>
             <a href="../html/our-history.html"><li>Our History</li></a>
             <a href="../html/meet-our-pastors.html"><li>Meet Our Pastors</li></a>
             <a href="../html/staff.html"><li>Our Staff</li></a>
             <a href="../html/ministries.html"><li>Ministries</li></a>
-            <a href="../html/connect.html"><li>Connect</li></a>
+            <a href="../html/connect.html" class="active"><li>Connect</li></a>
     
             <!-- <a href=""><img src="../img/occ-favicon.png" alt="logo"></a> -->
             <!-- <li>One Community Church Indiana</li> -->
@@ -201,16 +167,17 @@
       <div class="connect">
         <h1>Submit</h1>
         <ul>
-            <a href="mailto:pastoronecommunity@gmail.com?subject=Prayer%20Request"><li>Prayer Request</li></a>
-            <a href="mailto:pastoronecommunity@gmail.com?subject=Connect with One Community Church
-            &body=Please fill out the information below to Connect with One Community Church!%0D%0A%0D%0A%0D%0AYour Name:%0D%0A%0D%0AYour Email:%0D%0A%0D%0AYour Phone: %0D%0A%0D%0A%0D%0AThank you so much for responding!"><li>Connect</li></a>
-            <a href="https://square.link/u/xrs8uguf?src=embed" target="_blank"><li>Offering</li></a>
+          <a href="mailto:pastoronecommunity@gmail.com?subject=Prayer%20Request"><li>Prayer Request</li></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScMjB4WOonUZl6GeC7wZnYWrJmF5OTvE_90fhHpiu9AJBHWNQ/viewform" target="_blank"><li>Connect</li></a>
+          <a href="https://square.link/u/xrs8uguf?src=embed" target="_blank"><li>Offering</li></a>
         </ul>
     </div>
 
+
+
   </div>
 
-
+  <a href=""><img src="../img/occ-favicon.png" alt="logo"></a>
    
 
     <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">	&#128285;</button> -->

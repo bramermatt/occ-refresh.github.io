@@ -132,7 +132,7 @@ body {
     left: 0;
     /* background-color: #111; */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 65px; /* Place content 60px from the top */
+    padding-top: 55px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     text-decoration: none;
 
@@ -158,11 +158,11 @@ body {
   
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
-    position: absolute;
+    /* position: absolute; */
     top: 30;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
 
   .sidenav ul {
@@ -179,6 +179,21 @@ body {
     transition: margin-left .5s;
     /* padding: 20px; */
   }
+
+  .active {
+    font-weight: bold;
+    font-style:italic;
+    /* padding: 18px; */
+    /* background-color: white; */
+    /* color: rgb(68, 163, 68); */
+}
+
+.active:hover {
+    font-style: normal;
+    font-weight: normal;
+    /* background-color: black; */
+    /* color: rgb(68, 163, 68); */
+}
 
 
   blockquote {
@@ -1087,6 +1102,13 @@ input[type=text], select {
     margin: 15px 1px .75em;
     display: inline-block;
     margin-bottom: 5px;
+}
+
+.footer img {
+    height: 12vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* .footer {
