@@ -324,7 +324,7 @@ body {
     column-width: 5px;
     /* padding: 15px; */
 
-    max-width: 1550px;
+    max-width: 1850px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -569,7 +569,7 @@ body {
     padding: 15px;
     /* margin-top: 50px; */
     /* column-count: 2; */
-    max-width: 1400px;
+    max-width: 1800px;
     margin: auto;
 }
 
@@ -1238,6 +1238,7 @@ input[type=text], select {
 
     .item, .item-big, .item-wide {
         break-before: avoid-column;
+        /* padding: 2px; */
     }
 
     .four-columns h2, .three-columns h2, .two-columns h2, .our-location h2 , .one-column h2, .our-facilities h2 {
