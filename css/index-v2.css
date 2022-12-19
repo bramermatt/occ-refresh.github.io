@@ -116,7 +116,7 @@ body {
     
     /* margin: auto; */
     /* filter: invert(10); */
-    padding: 12px;
+    padding: 6px;
     max-height: 4vh;
     display: flex;
     align-items: center;
@@ -137,7 +137,8 @@ body {
     /* Disable horizontal scroll */
     /* padding-right: 15px; */
     padding-top: 55px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.5s; 
+    /* 0.5 second transition effect to slide in the sidenav */
     text-decoration: none;
 
   }
@@ -151,7 +152,7 @@ body {
     font-size: 24px;
     /* color: #818181; */
     display: block;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 
   }
   
@@ -188,7 +189,7 @@ body {
 
   .active {
     font-weight: bold;
-    font-style:italic;
+    /* font-style:italic; */
     /* padding: 18px; */
     /* background-color: white; */
     /* color: rgb(68, 163, 68); */
@@ -1291,7 +1292,7 @@ input[type=text], select {
 
     .sidenav a {
         padding-left: 35px;
-        padding-top: 15px;
+        /* padding-top: 15px; */
     }
 
     /* .our-services iframe {
@@ -1421,3 +1422,25 @@ input[type=text], select {
 
 
 }
+
+
+
+/* Christmas theme */
+
+/* @media screen and (prefers-color-scheme: light) {
+
+    .sidenav {
+        background-color: rgb(10, 138, 59);
+        color: white;
+    }
+
+    .sidenav a, .sidenav li {
+        color: white;
+    }
+
+    iframe, img {
+        filter: drop-shadow(0 0 2px rgb(0,0,0));
+    }
+    
+
+} */
