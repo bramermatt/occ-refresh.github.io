@@ -146,14 +146,18 @@ body {
   /* The navigation menu links */
   .sidenav a {
     /* padding: 8px 8px 8px 32px; */
-    padding-left: 15px;
-    padding-top: 8px;
+    /* padding-left: 15px; */
+    /* padding-top: 8px; */
     text-decoration: none;
     font-size: 24px;
     /* color: #818181; */
     display: block;
     /* transition: 0.3s; */
 
+  }
+
+  .sidenav li {
+    padding-left: 12px;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -165,8 +169,9 @@ body {
   .sidenav .closebtn {
     /* position: absolute; */
     top: 30;
-    right: 25px;
+    right: 30px;
     font-size: 36px;
+    padding-left: 1vw;
     /* margin-left: 50px; */
     /* display: none; */
   }
@@ -177,6 +182,7 @@ body {
     /* letter-spacing: .23rem; */
     line-height: 40px;
     padding: 0;
+    margin-top: 0;
     text-transform: uppercase;
   }
   
@@ -188,7 +194,7 @@ body {
   }
 
   .active {
-    font-weight: bold;
+    /* font-weight: bold; */
     /* font-style:italic; */
     /* padding: 18px; */
     /* background-color: white; */
@@ -196,8 +202,8 @@ body {
 }
 
 .active:hover {
-    font-style: normal;
-    font-weight: normal;
+    /* font-style: normal;
+    font-weight: normal; */
     /* background-color: black; */
     /* color: rgb(68, 163, 68); */
 }
@@ -271,7 +277,7 @@ body {
     max-width: max-content;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     padding: 15px;
 }
 
@@ -289,7 +295,7 @@ body {
     font-size: 18px;
     /* text-align: justify; */
     text-align: center;
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
     margin: auto;
     /* padding-bottom: 30px; */
     /* max-width: 900px; */
@@ -355,7 +361,7 @@ body {
     /* column-gap: 50px; */
     column-width: 5px;
     padding: 15px;
-    max-width: 1550px;
+    max-width: 1350px;
     /* max-width: 1850px; */
     margin-left: auto;
     margin-right: auto;
@@ -402,7 +408,7 @@ body {
     column-count: 4;
     /* column-gap: 50px; */
     /* max-width: fit-content; */
-    max-width: 1600px;
+    max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -471,6 +477,8 @@ body {
 
 .our-location h1 {
     font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 20px;
     text-align: center;
     column-span: all;
     margin: 5px;
@@ -545,6 +553,10 @@ body {
     /* margin: auto; */
     /* background-image: url('../img/backgrounds/lan2.jpg'); */
 
+}
+
+.item-wide a:link, a:visited {
+    color: var(--text);
 }
 
 .item-wide h2 {
@@ -623,12 +635,18 @@ body {
     background-position: center;
 }
 
-.our-services, .our-history {
-    padding: 15px;
+.our-services {
+    /* padding: 15px; */
     /* margin-top: 50px; */
     /* column-count: 2; */
     max-width: 1800px;
     margin: auto;
+}
+
+.our-history {
+    max-width: 1800px;
+    margin: auto;
+    padding: 15px;
 }
 
 .our-services h1 {
@@ -655,13 +673,13 @@ body {
 
 
 .statement {
-    columns: 1;
+    /* columns: 1; */
     /* padding: 75px 25px; */
     /* margin-top: 50px; */
     padding: 15px;
-    column-gap: 50px;
-    column-width: 5px;
-    max-width: 900px;
+    /* column-gap: 50px; */
+    /* column-width: 5px; */
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -669,6 +687,7 @@ body {
 .statement h1 {
     padding: auto;
     font-size: 50px;
+    line-height: 50px;
     column-span: all;
     text-align: center;
     margin: 5px;
@@ -677,7 +696,8 @@ body {
 .statement p {
     font-size: 18px;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 10px;
+    /* padding-bottom: 20px; */
     margin: 0;
 }
 
@@ -939,7 +959,8 @@ input[type=text], select {
 
 .upcoming-events {
     /* padding: 75px 25px; */
-    padding: 25px 25px;
+    /* padding: 25px 25px; */
+    padding: 15px;
     /* max-width: 1000px; */
     margin-left: auto;
     margin-right: auto;
@@ -1010,6 +1031,7 @@ input[type=text], select {
     /* padding: 25px 25px; */
     /* column-count: 3; */
     column-gap: 75px;
+    padding: 15px;
     /* max-width: 1600px; */
     margin-left: auto;
     margin-right: auto;
@@ -1058,6 +1080,10 @@ input[type=text], select {
     /* break-before: column; */
 }
 
+.our-staff {
+    padding: 15px;
+}
+
 .our-staff h3 {
     text-align: center;
     font-style: italic;
@@ -1085,7 +1111,7 @@ input[type=text], select {
 
 .overlay p {
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1094,6 +1120,110 @@ input[type=text], select {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+details {
+    /* width: 50%; */
+    width: 100%;
+    max-width: max-content;
+    /* max-width: 700px; */
+    /* max-width: 1000px; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin: 0 auto ;
+    background: #282828;
+    margin-bottom: .5rem;
+    box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: 5px;
+    overflow: hidden;
+    /* border-bottom: 1px solid; */
+  }
+  
+  summary {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 1rem;
+    display: block;
+    background: rgba(51, 51, 51, 0.479);
+    padding-left: 2.8rem;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  summary:before {
+    content: '';
+    /* border-width: .8rem; */
+    border-width: 1rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1rem;
+    left: 1.3rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+
+  /* details[open] {
+    padding: 1rem;
+  } */
+  
+  /* THE MAGIC 🧙‍♀️ */
+  details[open] > summary:before {
+    transform: rotate(90deg);
+
+  }
+
+  details ol, details ul {
+    padding-left: 50px;
+    padding-right: 15px;
+}
+
+details p, details h2 {
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    padding: 15px;
+    /* max-width: 700px; */
+}
+  
+  @media screen and (max-width: 750px) {
+    details {
+        /* padding: 15px; */
+        /* background: none; */
+        /* border: 1px solid; */
+
+    }
+
+
+
+
+  }
+
+  @media screen and (prefers-color-scheme: light) {
+    summary {
+        background: rgb(0, 45, 248);
+        color: white;
+    }
+
+    details {
+        background: none;
+    }
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    details {
+        box-shadow: 0 .05rem 1rem -.5rem rgba(255, 255, 255, 0.5);
+    }
+
+    summary {
+        background: rgb(0, 45, 248, .076);
+    }
+
+  }
+  
+  details summary::-webkit-details-marker {
+    display:none;
+
+  }
 
 .img-hover:hover .overlay {
     opacity: 1;
@@ -1264,27 +1394,21 @@ input[type=text], select {
         margin-right: auto;
     }
 
-    .three-columns, .one-column, .five-columns {
+    .three-columns, .one-column, .five-columns, .four-columns, .two-columns {
         columns: 1;
         margin-left: auto;
         margin-right: auto;
-        max-width: 800px;
+        max-width: 600px;
     }
 
     .item img, .item-big img, .item-wide img { 
         /* object-fit: scale-down; */
     }
 
-    .four-columns, .two-columns {
-        columns: 1;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 750px;
-    }
-
     .item, .item-big, .item-wide {
         break-before: avoid-column;
         /* padding: 2px; */
+
     }
 
     .four-columns h2, .three-columns h2, .two-columns h2, .our-location h2 , .one-column h2, .our-facilities h2 {
@@ -1299,6 +1423,14 @@ input[type=text], select {
         font-size: 40px;
         line-height: 40px;
         /* padding: 10px; */
+    }
+
+    .title, .two-columns, .one-column, .three-columns {
+        padding: 0;
+    }
+
+    #our-services, .church-bus {
+        padding: 15px;
     }
 
     body h1 {
@@ -1342,6 +1474,11 @@ input[type=text], select {
         /* padding-top: 15px; */
     }
 
+    .sidenav li {
+        padding-left: 0;
+        padding: 10px;
+    }
+
     /* .our-services iframe {
         height: 240px;
     } */
@@ -1367,9 +1504,9 @@ input[type=text], select {
 @media screen and (max-width: 700px) {
     .topTitle h1 {
         font-size: 20px;
-        line-height: 45px;
-        margin-left: 40px;
-        margin-right: 40px;
+        line-height: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
 
@@ -1389,6 +1526,11 @@ input[type=text], select {
     .hamburger, .hamburger-mobile {
         
         background-color: #111;
+    }
+
+    .active li, .active {
+        color: black;
+        background-color: white;
     }
 
 
@@ -1440,7 +1582,7 @@ input[type=text], select {
         /* border: none; */
     }
 
-    .item blockquote, .item-big blockquote, .item-wide blockquote {
+    .item blockquote, .item-big blockquote, .item-wide blockquote, .staff blockquote {
         color: var(--text);
         border-top: thin solid;
         margin-top: 10px;
@@ -1458,18 +1600,26 @@ input[type=text], select {
     .hamburger img, .hamburger-mobile img, .footer img {
         filter: invert(10);
     }
+
+
     
     .sidenav {
-        background-color: rgb(29,29,29);
+        /* background-color: rgb(29,29,29); */
+        background-color: white;
+        border-right: thin solid;
     }
 
     .sidenav a:link, .sidenav a:visited {
-        color: darkgrey;
+        /* color: darkgrey; */
+        color: black;
         text-decoration: none;
     }
 
     .sidenav a:hover {
         color: #f1f1f1;
+        color: white;
+        /* color:#008CBA; */
+        background-color: black;
     }
 
 
@@ -1489,7 +1639,7 @@ input[type=text], select {
         /* border: none; */
     }
 
-    .item blockquote, .item-big blockquote, .item-wide blockquote {
+    .item blockquote, .item-big blockquote, .item-wide blockquote, .staff blockquote {
         color: var(--text);
         border-top: thin solid;
         margin-top: 10px;
@@ -1512,7 +1662,10 @@ input[type=text], select {
     } */
 
 
-
+    .active li, .active{
+        color: white;
+        background-color: black;
+    }
 
 }
 

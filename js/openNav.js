@@ -14,9 +14,9 @@
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "280px";
+  document.getElementById("mySidenav").style.width = "255px";
   // body.width = "880px";
-  document.getElementById("main").style.marginLeft = "280px";
+  document.getElementById("main").style.marginLeft = "255px";
 }
 
 function openNavMobile() {
