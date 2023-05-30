@@ -324,7 +324,39 @@ body {
     /* border: 1px solid; */
     /* border-radius: 25px; */
   }
+  
 
+.two-column-theme {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+    padding: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    /* border-bottom: thin solid; */
+    /* border-top: thin solid; */
+
+}
+
+.two-column-theme img {
+    max-height: 60vh;
+    margin: auto;
+    width: 100%;
+}
+
+.two-column-theme h2 {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+    .two-column-theme {
+        grid-template-columns: 1fr;
+        max-width: 800px;
+        margin: 0 auto;
+
+    }
+}
 
 .one-column {
 
