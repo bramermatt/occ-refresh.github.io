@@ -329,7 +329,7 @@ body {
 .two-column-theme {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gap: 10px;
+    gap: 5vw;
     padding: 15px;
     max-width: 1400px;
     margin: 0 auto;
