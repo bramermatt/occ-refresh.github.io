@@ -80,12 +80,12 @@ body {
     font-size: 30px;
     padding-left: 15px;
     /* border-bottom: .5px solid; */
-    position: sticky;
+    /* position: sticky; */
     left: 0;
     top: 0;
     right: 0;
     bottom: auto;
-    z-index: 1;
+    z-index: 100;
     background-color: white;
     cursor: pointer;
     visibility: hidden;
@@ -220,7 +220,7 @@ body {
 }
 
 .topTitle {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     z-index: 10;
     padding-top: 10px;
@@ -229,10 +229,14 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+
+
+    display: none;
 }
 
 .topTitle h1 {
-    position: fixed;
+    /* position: fixed; */
+    position: relative;
     left: 0;
     top: 0;
     right: 0;
