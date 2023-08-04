@@ -36,7 +36,8 @@ body {
     /* object-fit: cover; */
 
     padding: auto;
-    margin: auto;
+    /* margin: auto; */
+    margin: 0;
     /*
     max-width: 1350px;
     min-width: 450px;
