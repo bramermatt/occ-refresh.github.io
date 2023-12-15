@@ -314,6 +314,8 @@ body {
     width: 100%;
     padding-top: 56.35%; 
     margin-top: 10px;
+
+
   }
   
   /* Then style the iframe to fit in the container div with full height and width */
@@ -328,6 +330,9 @@ body {
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     /* border: 1px solid; */
     /* border-radius: 25px; */
+
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px -2px rgb(0 0 0 / 28%); 
   }
   
 
@@ -550,11 +555,14 @@ body {
 
 .item, .item-big {
     break-before: column;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
     border: solid 2px black;
     background-color: white;
     /* box-shadow: 15px 15px 0 -4px white, 15px 15px black; */
+
+    border-radius: 30px;
+    
 }
 
 .item h2 {
@@ -568,6 +576,9 @@ body {
     width: 100%;
     object-fit: cover;
     /* box-shadow: inset 3px #000000; */
+
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px -2px rgb(0 0 0 / 28%); 
 }
 
 .item-big img {
@@ -575,12 +586,15 @@ body {
     width: 100%;
     object-fit: cover;
     /* box-shadow: inset 3px #000000; */
+
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px -2px rgb(0 0 0 / 28%); 
 }
 
 
 .item-wide {
     break-before: column;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
     border: solid 2px black;
     /* background-color: white; */
@@ -589,6 +603,7 @@ body {
     margin-right: auto;
     /* margin: auto; */
     /* background-image: url('../img/backgrounds/lan2.jpg'); */
+    border-radius: 30px;
 
 }
 
@@ -623,6 +638,9 @@ body {
     max-width: 100%;
     object-fit: cover;
     /* box-shadow: inset 3px #000000; */
+
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px -2px rgb(0 0 0 / 28%); 
 }
 
 .text-on-img {
