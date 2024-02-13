@@ -1915,3 +1915,9 @@ details p, details h2 {
 
     /* background-image: url(../img/about/occ-img.jpg); */
   }
+
+  @media screen and (prefers-color-scheme:dark) {
+    .content {
+        color: black;
+    }
+  }
