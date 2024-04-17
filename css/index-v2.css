@@ -145,6 +145,7 @@ body {
     /* Disable horizontal scroll */
     /* padding-right: 15px; */
     padding-top: 55px; /* Place content 60px from the top */
+    padding-bottom: 40vh;
     transition: 0.5s; 
     /* 0.5 second transition effect to slide in the sidenav */
     text-decoration: none;
