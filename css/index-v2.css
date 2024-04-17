@@ -93,7 +93,7 @@ body {
     visibility: hidden;
     display: none;
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
-    border-bottom: thin solid;
+    /* border-bottom: thin solid; */
     z-index: 10;
     position: sticky;
   }
@@ -114,7 +114,8 @@ body {
     cursor: pointer;
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
 
-    border-bottom: thin solid;
+    /* border-bottom: thin solid; */
+    opacity: 90%;
 }
 
 .hamburger img, .hamburger-mobile img {
@@ -1572,6 +1573,24 @@ details p, details h2 {
         margin-left: 100px;
         margin-right: 100px;
     }
+
+
+
+    .item, .item-big, .item-wide {
+        
+        padding: 8px;
+
+    }
+
+    .intro {
+        padding: 10px;
+    }
+
+    .upcoming-events, .our-location, #our-services, .meet-pastors {
+        padding: 8px;
+        padding-top: 10px;
+    }
+
 }
 
 
@@ -1670,7 +1689,7 @@ details p, details h2 {
     .sidenav {
         /* background-color: rgb(29,29,29); */
         background-color: white;
-        border-right: thin solid;
+        /* border-right: thin solid; */
     }
 
     .sidenav a:link, .sidenav a:visited {
