@@ -473,9 +473,9 @@ body {
     padding: 15px;
     /* padding-bottom: 50px; */
     column-count: 3;
-    column-gap: 50px;
+    column-gap: 2vw;
     /* max-width: fit-content; */
-    max-width: 1600px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -855,10 +855,10 @@ body {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    text-align: justify;
+    /* text-align: justify; */
     /* text-align: start; */
-    font-size: 18px;
-    text-indent: 30px;
+    /* font-size: 18px; */
+    /* text-indent: 30px; */
     line-height: 1.5em;
 }
 
@@ -1621,7 +1621,7 @@ details p, details h2 {
 
     .item, .item-big, .item-wide {
         
-        padding: 8px;
+        padding: 15px;
 
     }
 
@@ -1630,7 +1630,7 @@ details p, details h2 {
     }
 
     .upcoming-events, .our-location, #our-services, .meet-pastors {
-        padding: 8px;
+        padding: 15px;
         padding-top: 10px;
     }
 
@@ -1727,6 +1727,14 @@ details p, details h2 {
     .fullscreen-topic {
         box-shadow: 4px 4px 0px rgb(109, 109, 109); 
         border: thin solid;
+    }
+
+    body {
+        background-color: rgb(43, 43, 43);
+    }
+
+    nav, .item, .item-big, .item-wide, .fullscreen-topic {
+        background-color: rgb(24, 24, 24);
     }
 
 
