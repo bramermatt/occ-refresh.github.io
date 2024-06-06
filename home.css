@@ -388,20 +388,22 @@ blockquote {
     }
 
     .split img {
-        height: 60vh;
+        height: 70vh;
     }
 
 
 }
 
 @media screen and (max-width: 400px) {
+    .nav-topic {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 370px) {
 
     nav {
         position: relative;
-    }
-
-    .nav-topic {
-        display: none;
     }
 
     .split-pane {
