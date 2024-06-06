@@ -1,6 +1,4 @@
 html {
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -51,7 +49,7 @@ nav {
     align-items: center;
     padding: 10px;
     padding-inline: 25px;
-
+    z-index: 9999999 !important;
     width: 100%;
     /* border-bottom: thin solid #eee; */
 }
@@ -59,7 +57,7 @@ nav {
 
 /* testing navbar  */
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     color: white;
     transition: top 0.3s;
@@ -72,7 +70,7 @@ nav img {
 }
 
 nav {
-    background-color: rgba(61, 61, 61, 80%);
+    background-color: rgba(61, 61, 61);
 }
 
 
@@ -90,7 +88,7 @@ nav li {
     font-weight: 200;
 }
 
-nav li a {
+nav li a, .mobile-nav li a {
     padding: 10px;
     font-weight: normal;
    
@@ -101,25 +99,36 @@ nav img {
     padding: 0;
 }
 
-nav li a:link, nav li a:visited {
+nav li a:link, nav li a:visited, .mobile-nav li a:link, .mobile-nav li a:visited {
     color: var(--text);
     text-decoration: none;
     /* font-weight: 200; */
     text-transform: uppercase;
 }
 
-nav li a:hover {
+nav li a:hover, .mobile-nav li a:hover {
     background-color: black;
     color: white;
     border-radius: 8px;
+    font-weight: normal;
 }
 
 .nav-topic {
 
 }
 
-.nav-mobile {
+.nav-mobile, .mobile-nav {
     display: none;
+}
+
+.mobile-nav {
+    transition: top 0.3s;
+    height: 100vh;
+}
+
+.mobile-nav li {
+    padding: 15px;
+    list-style-type: none;
 }
 
 
@@ -131,7 +140,7 @@ header {
 
 header img {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     object-fit: cover;
 }
 
@@ -160,6 +169,9 @@ footer {
     position: relative;
     bottom: 0;
     padding: 20px;
+    text-align: center;
+    border-top: thin solid;
+    /* margin-top: 10vh; */
 }
 
 
@@ -211,19 +223,188 @@ iframe, video {
 }
 
 
+.active {
+    font-weight: 500;
+}
+
+.category {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-three-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    max-width: 1700px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+.item {
+    box-shadow: 0px 0px 2px rgb(26, 26, 26);
+    border-radius: 10px;
+    overflow: hidden;
+    /* max-width: 250px; */
+    height: 100%;
+    padding: 12px;
+    /* border: thick solid; */
+}
+
+.item img {
+    max-height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item h1 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.item h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.pane {
+    /* border-top: thin solid; */
+    /* border-bottom: thin solid; */
+    /* margin-top: 10vh; */
+    /* margin-bottom: 10vh; */
+}
+
+.split-pane {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: thin solid;
+    border-bottom: thin solid;
+}
+
+.split-text {
+    padding: 40px;
+    /* max-width: 700px; */
+    align-self: center;
+    justify-self: center;
+    /* border: thin solid; */
+}
+
+.split-text h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.split-text p {
+    max-width: 550px;
+    font-size: 20px;
+}
+
+.split-text li {
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.split {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+}
+
+.split img {
+    object-fit: cover;
+    max-height: 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+blockquote {
+    border-left: thick solid;
+    padding-left: 10px;
+    color: grey;
+    /* margin-left: 0; */
+}
 
 
+
+
+@media screen and (max-width: 1400px) {
+    nav h1 {
+        display: none;
+    }
+}
 
 
 @media screen and (max-width: 1000px) {
 
-    .nav-desktop, nav h1 {
+    .nav-desktop {
         display: none;
     }
 
+    .grid-three-items, .split-pane {
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .special {
+        grid-template-columns: 1fr;
+    }
 
     .nav-mobile {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .item {
+        padding: 0;
+        box-shadow: none;
+        
+        border-radius: 0;
+        border: none;
+        border-bottom: thin solid;
+    }
+
+    .grid-three-items {
+        grid-template-columns: 1fr;
+    }
+
+    .split-pane {
+        /* border: none; */
+    }
+
+    .split-text {
+        padding: 20px;
+    }
+
+    .split-text h2 {
+        font-size: 24px;
+    }
+
+    .split-text p {
+        font-size: 16px;
+    }
+
+    .split img {
+        height: 60vh;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    nav {
+        position: relative;
+    }
+
+    .nav-topic {
+        display: none;
+    }
+
+    .split-pane {
         display: block;
     }
 }
