@@ -7,13 +7,10 @@ function myFunction() {
     }
   }
 
-  function scrollToTop() {
-    var scrollDuration = 400;
-    var scrollStep = -window.scrollY / (scrollDuration / 15),
-        scrollInterval = setInterval(function(){
-          if (window.scrollY != 0) {
-              window.scrollBy(0, scrollStep);
-          }
-          else clearInterval(scrollInterval); 
-        }, 15);
-  }
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
