@@ -33,7 +33,7 @@
 
         <ul class="nav-desktop">
             <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <!-- <li><a href="">About</a></li> -->
             
             <li class="dropdown">
                 <button class="dropbtn" onclick="toggleDropdown('dropDown1', this)">Services <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
@@ -74,43 +74,74 @@
             <li class="dropdown">
                 <button class="dropbtn" onclick="toggleDropdown('dropDown2', this)">Ministries <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                 <div class="dropdown-content" id="dropDown2">
-                    <div class="grid-content" style="grid-template-columns: repeat(3, minmax(auto, auto));">
+                    <div class="grid-content" >
 
                         <div class="pd-15">
                             <h1>Nursery Ministries</h1>
-                            <p><strong></strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum velit, suscipit beatae quam alias, blanditiis atque expedita tenetur tempora dolor deleniti a eos distinctio laboriosam earum omnis quis sed.</p>
+                            <h2>Ages 0-6</h2>
+                            <p><strong>Nursery Ministry</strong> is dedicated to providing a safe, nurturing, and loving environment for infants and toddlers. Our team of trained caregivers ensures that your little ones are cared for with the utmost attention and love while you attend services and other church activities. We focus on early spiritual growth through simple songs, stories, and interactive play.</p>
+
+                            <div class="profile">
+                                <img src="img/staff/denise-prof-square.jpg" alt="">
+                                    <div class="profile-name">
+                                        <h2>Denise Boesche</h2>
+                                        <p>Nursery Leader</p>
+                                    </div>  
+                            </div>
                         </div>
 
                         <div class="pd-15">
                             <h1>Children's Ministries</h1>
-                            <p><strong></strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum velit, suscipit beatae quam alias, blanditiis atque expedita tenetur tempora dolor deleniti a eos distinctio laboriosam earum omnis quis sed.</p>
+                            <h2>Ages 6-12</h2>
+                            <p><strong>Children's Ministry</strong> offers engaging and age-appropriate programs for children from preschool through elementary school. Our mission is to instill a love for Jesus and the Bible through dynamic storytelling, interactive lessons, worship, and fun activities. We aim to build a solid spiritual foundation that will support their faith journey for years to come.</p>
+
+                            <div class="profile">
+                                <img src="img/staff/sandy-prof-square.jpg" alt="">
+                                    <div class="profile-name">
+                                        <h2>Sandy Bramer</h2>
+                                        <p>Chidren's Church Leader</p>
+                                    </div>  
+                            </div>
+
+                            <div class="profile">
+                                <img src="img/staff/nancy-prof.JPEG" alt="">
+                                    <div class="profile-name">
+                                        <h2>Nancy Morgan</h2>
+                                        <p>Chidren's Church Assistant</p>
+                                    </div>  
+                            </div>
                         </div>
 
                         <div class="pd-15">
                             <h1>Youth Ministries</h1>
-                            <p><strong></strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum velit, suscipit beatae quam alias, blanditiis atque expedita tenetur tempora dolor deleniti a eos distinctio laboriosam earum omnis quis sed.</p>
+                            <h2>Ages 13-18</h2>
+                            <p><strong>Youth Ministry</strong> is designed to help middle school and high school students grow in their faith, build strong friendships, and navigate the challenges of adolescence. Through weekly meetings, Bible studies, retreats, and service projects, we create an environment where teens can explore their faith, ask questions, and develop a personal relationship with Jesus.</p>
                         </div>
 
                         <div class="pd-15">
                             <h1>Young Adult Ministries</h1>
-                            <p><strong></strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum velit, suscipit beatae quam alias, blanditiis atque expedita tenetur tempora dolor deleniti a eos distinctio laboriosam earum omnis quis sed.</p>
+                            <h2>Ages 18-</h2>
+                            <p><strong>Young Adult Ministry</strong> provides a vibrant community for college students, young professionals, and early career individuals. Our goal is to support young adults in their spiritual, personal, and professional growth. We offer Bible studies, social events, mentorship opportunities, and service projects to help young adults connect with each other and deepen their faith.</p>
                         </div>
 
                         <div class="pd-15">
                             <h1>Adult Ministries</h1>
-                            <p><strong></strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum velit, suscipit beatae quam alias, blanditiis atque expedita tenetur tempora dolor deleniti a eos distinctio laboriosam earum omnis quis sed.</p>
+                            <h2></h2>
+                            <p><strong>Adult Ministry</strong> encompasses a variety of programs and activities designed to support adults at all stages of life. From small group Bible studies to fellowship events and volunteer opportunities, our goal is to help adults grow in their faith, build meaningful relationships, and serve the community. We offer specialized programs for singles, couples, and seniors to meet their unique needs.</p>
                         </div>
 
                         <!-- community ministries below -->
 
                         <div class="pd-15">
                             <h1>Food Ministries</h1>
-                            <p><strong></strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum velit, suscipit beatae quam alias, blanditiis atque expedita tenetur tempora dolor deleniti a eos distinctio laboriosam earum omnis quis sed.</p>
+                            <h2>Community Blessing Box</h2>
+                            <p><strong>Food Giveaway Ministry</strong> is committed to addressing food insecurity in our community. We organize regular food drives and distribution events to provide nutritious groceries to individuals and families in need. Our volunteers work tirelessly to ensure that everyone has access to the food they need, embodying the love and compassion of Christ through practical support.</p>
                         </div>
                         
                         <div class="pd-15">
                             <h1>Bike Ministries</h1>
-                            <p><strong></strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum velit, suscipit beatae quam alias, blanditiis atque expedita tenetur tempora dolor deleniti a eos distinctio laboriosam earum omnis quis sed.</p>
+                            <h2>Community Bike Giveaways</h2>
+                            <p><strong>Bike Giveaway Ministry</strong> aims to provide children and adults with the gift of mobility and freedom. We collect, repair, and distribute bicycles to those who may not have access to reliable transportation. Through our bike giveaways, we hope to promote healthy living, reduce transportation barriers, and bring joy to recipients, reflecting God's love in a tangible way.</p>
                         </div>
 
 
@@ -171,8 +202,36 @@
                 </div>
             </li>
 
-            <li><a href="">Events</a></li>
-            <li><a href="">Facilities</a></li>
+            <li class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropDown5', this)">Events <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropDown5">
+                    <div class="grid-content">
+
+                        <div class="pd-15">
+                            <h1>Children's Ministry</h1>
+                            <p>VBS!</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Youth Ministry</h1>
+                            <p>CHURCH CAMP!</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Young Adult Ministry</h1>
+                            <p>Started a NEW CLASS!</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Food Ministry</h1>
+                            <p>Food Giveaway Every Third Thursday!</p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </li>
+            <!-- <li><a href="">Facilities</a></li> -->
 
             
         </ul>
@@ -182,15 +241,15 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction();scrollToTop()">
                     <i class="fa fa-bars" aria-hidden="true" style="font-size: 22px;"></i>
                   </a>
-            </li>
+            </li>            
         </ul>
 
     </nav>
 
-    <script src="js/dropDown.js"></script>
 
+
+    <!-- orig mobile nav -->
     <ul class="mobile-nav" id="mobile-nav">
-        <!-- <h2>Pages</h2> -->
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Services</a></li>
@@ -201,9 +260,361 @@
         <li><a href="">Facilities</a></li>
     </ul>
 
+    <!-- duped desktop nav 
+    <ul class="mobile-nav" id="mobile-nav">
+        <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            
+            <li class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropDown6', this)">Services <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropDown6">
+                    <div class="grid-content">
+                        <div class="pd-15">
+                            <h1>Sundays</h1>
+                            <p><strong>Small Group Study:</strong> 9:45 AM</p>
+                            <p><strong>Worship:</strong> 11:00 AM</p>
+                        </div>
 
+                        <div class="pd-15">
+                            <h1>Wednesdays</h1>
+                            <p><strong>Small Group Study:</strong> 6:30 PM</p>
+                            <p><strong>Worship:</strong> 7:00 PM</p>
+                        </div>
+                        
+                        <div class="pd-15">
+                            <h1>Stream LIVE</h1>
+                            <p><strong><a href=""> <img src="img/icon/youtube.png" alt=""> YouTube</a></strong></p>
+                            <p><strong><a href=""><img src="img/icon/facebook.png" alt=""> Facebook</a></strong></p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>In Person</h1>
+                            <p><strong>One Community Church Indiana</strong>, located at <em>1810 Blackiston Mill Road, Clarksville, IN 47129</em></p>
+                            <div class="iframe-container" style="border-radius: 10px;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.32639216147!2d-85.77988768442322!3d38.31827188847578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88696de4c640ef57%3A0xcdb8a9dc819fbcfc!2s1810%20Blackiston%20Mill%20Rd%2C%20Clarksville%2C%20IN%2047129!5e0!3m2!1sen!2sus!4v1664753261156!5m2!1sen!2sus" width="100%" height="380" style="border:0; display: block; margin-bottom: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropDown2', this)">Ministries <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropDown2">
+                    <div class="grid-content" >
+
+                        <div class="pd-15">
+                            <h1>Nursery Ministries</h1>
+                            <h2>Ages 0-6</h2>
+                            <p><strong>Nursery Ministry</strong> is dedicated to providing a safe, nurturing, and loving environment for infants and toddlers. Our team of trained caregivers ensures that your little ones are cared for with the utmost attention and love while you attend services and other church activities. We focus on early spiritual growth through simple songs, stories, and interactive play.</p>
+
+                            <div class="profile">
+                                <img src="img/staff/denise-prof-square.jpg" alt="">
+                                    <div class="profile-name">
+                                        <h2>Denise Boeshe</h2>
+                                        <p>Nursery Leader</p>
+                                    </div>  
+                            </div>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Children's Ministries</h1>
+                            <h2>Ages 6-12</h2>
+                            <p><strong>Children's Ministry</strong> offers engaging and age-appropriate programs for children from preschool through elementary school. Our mission is to instill a love for Jesus and the Bible through dynamic storytelling, interactive lessons, worship, and fun activities. We aim to build a solid spiritual foundation that will support their faith journey for years to come.</p>
+
+                            <div class="profile">
+                                <img src="img/staff/sandy-prof-square.jpg" alt="">
+                                    <div class="profile-name">
+                                        <h2>Sandy Bramer</h2>
+                                        <p>Chidren's Church Leader</p>
+                                    </div>  
+                            </div>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Youth Ministries</h1>
+                            <h2>Ages 13-18</h2>
+                            <p><strong>Youth Ministry</strong> is designed to help middle school and high school students grow in their faith, build strong friendships, and navigate the challenges of adolescence. Through weekly meetings, Bible studies, retreats, and service projects, we create an environment where teens can explore their faith, ask questions, and develop a personal relationship with Jesus.</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Young Adult Ministries</h1>
+                            <h2>Ages 18-</h2>
+                            <p><strong>Young Adult Ministry</strong> provides a vibrant community for college students, young professionals, and early career individuals. Our goal is to support young adults in their spiritual, personal, and professional growth. We offer Bible studies, social events, mentorship opportunities, and service projects to help young adults connect with each other and deepen their faith.</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Adult Ministries</h1>
+                            <h2></h2>
+                            <p><strong>Adult Ministry</strong> encompasses a variety of programs and activities designed to support adults at all stages of life. From small group Bible studies to fellowship events and volunteer opportunities, our goal is to help adults grow in their faith, build meaningful relationships, and serve the community. We offer specialized programs for singles, couples, and seniors to meet their unique needs.</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Food Ministries</h1>
+                            <h2>Community Blessing Box</h2>
+                            <p><strong>Food Giveaway Ministry</strong> is committed to addressing food insecurity in our community. We organize regular food drives and distribution events to provide nutritious groceries to individuals and families in need. Our volunteers work tirelessly to ensure that everyone has access to the food they need, embodying the love and compassion of Christ through practical support.</p>
+                        </div>
+                        
+                        <div class="pd-15">
+                            <h1>Bike Ministries</h1>
+                            <h2>Community Bike Giveaways</h2>
+                            <p><strong>Bike Giveaway Ministry</strong> aims to provide children and adults with the gift of mobility and freedom. We collect, repair, and distribute bicycles to those who may not have access to reliable transportation. Through our bike giveaways, we hope to promote healthy living, reduce transportation barriers, and bring joy to recipients, reflecting God's love in a tangible way.</p>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropDown3', this)">Prayer <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropDown3">
+                    <div class="grid-content">
+                        <div class="pd-15">
+                            <h1>Need Prayer?</h1>
+                            <p><strong>Send a Prayer Request:</strong> <a href="http://" target="_blank" rel="noopener noreferrer">pastor@onecommunity.church</a></p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Current Prayer Requests</h1>
+                            <p><strong>June 2024</strong></p>
+                            <p>
+                                Our Church * Amy Beard * Rosemary Mix* 
+                                Gayle Blankenship -Cordero (Jana’s sister) * 
+                                Jacqueline Fosnot (MR) * Wayne Avery * 
+                                Stacey Schultz (SM)* Amanda Hochstetler (SB) 
+                                * Rhonda Goforth’s Family * Dennis 
+                                Loughmiller * Bret Taylor (Sharon Shepherd’s 
+                                son) * Mary Lee Mahan (TH) * Everett Bramer 
+                                * Leah (Wendi’s Boss) * Sherry Wells (Denise 
+                                S. Sister) * Doris Alexander * Laura DeKorte * 
+                                Don & Janet DeKorte * Heather Smoot (CL)
+                                * Jean Dorman * Silas Lacroix (son of TJ 
+                                & Samantha)* Robbie Coogle (Jon’s 
+                                boss) & AJ Mallot’s family * Marcie 
+                                Chavez’s family
+                                </p>
+                        </div>
+                        
+
+
+                        
+                    </div>
+                </div>
+            </li>
+            
+
+            <li class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropDown4', this)">Giving <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropDown4">
+                    <div class="grid-content">
+                        <div class="pd-15">
+                            <h1>Online Offering</h1>
+                            <p><a href="https://square.link/u/9iWte5VO" target="_blank">One Community Church Indiana Online Giving</a></p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropDown5', this)">Events <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropDown5">
+                    <div class="grid-content">
+
+                        <div class="pd-15">
+                            <h1>Children's Ministry</h1>
+                            <p>VBS!</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Youth Ministry</h1>
+                            <p>CHURCH CAMP!</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Young Adult Ministry</h1>
+                            <p>Started a NEW CLASS!</p>
+                        </div>
+
+                        <div class="pd-15">
+                            <h1>Food Ministry</h1>
+                            <p>Food Giveaway Every Third Thursday!</p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </li>
+            <li><a href="">Facilities</a></li>
+    </ul>
+
+ -->
 
     </nav>
+
+
+
+<main>
+
+    <div class="topic pd-15">
+
+        <h1>Meet Our Pastors!</h1>
+        <p>Yes, pastor(s)! God has blessed us with three amazing pastors!</p>
+        
+        <div class="grid-three-content" style="max-width: 1400px; margin: 0 auto;">
+
+            <div class="grid-item pd-15">
+
+                <h2>Andy Bramer</h2>
+                <h3>Student and Family Pastor</h3>
+
+                <img src="img/pastors/andy1.jpg" alt="">
+
+                <blockquote>Cell: <a href="tel:502-693-7090">502-693-7090</a><br>Email: <a href="mailto:bramer1020@gmail.com">bramer1020@gmail.com</a></blockquote>
+
+
+                <p>My name is Andy Bramer I am the Student and Family Pastor of One Community Church. I have been working with students and their families for over  20 years.  My wife (Ann Marie) and I, have been blessed with 2 awesome sons, Jon and Matt, who are now both married. Jon and his wife, Emily have blessed us with 3 beautiful grandkids (Annabelle, JR and Oliver. Matt and his wife Sandy just blessed us with our 4th grandchild, Everett. They are also a part of our worship team at OCC.</p>
+                
+                <p>I came to know Christ when I was 12 years old while attending a local church. I struggled in my walk with Christ while I was in middle and high school. By the time I was realized it was time to quite running. I responded to God’s call into full time youth ministry at the age of 25 and have never looked back. I love working with and ministering to students and their families. One of the ways I am able to do that is through Campus Life & the Fellowship of Christian Athletes that meet weekly at Clarksville Middle & High School. I love the local church and would be glad to talk with you about any questions you might have.</p>
+
+
+
+            </div>
+
+            <div class="grid-item pd-15">
+                <h2>Daniel Tatum</h2>
+                <h3>Associate Pastor</h3>
+                <img src="img/pastors/daniel1.jpg" alt="">
+                <blockquote>Cell: <a href="tel:606-224-0014">606-224-0014</a><br>Email: <a href="mailto:dgtatum@gmail.com">dgtatum@gmail.com</a></blockquote>
+
+                <p>My name is Daniel Tatum. I am one the associate pastors, besides alternating preaching on Sundays I also lead one of the adult life groups.  I have been married to my lovely wife Wendi since 2004. We have been blessed with two children, Saul and Josie. My walk with God started with the seed my mother planted while dragging me to church and Sunday school every week when I was a kid.</p>
+                    
+                <p>I gave my life to Christ when I was 13, but I really started building a stronger relationship with him when I met Wendi. We started attending church together and in 2006 our path led us to Harvest Valley (now One Community). We quickly felt like we had found a church family instead of just a church. God has steadily led us to take on more responsibility in the church. Wendi is active in her role in working with the students while I also lead the tech team.  My passion is teaching and I hope to make learning to walk with God a simple and easy to understand concept. God has called me to outreach and I also feel very strong about helping the young men in our church develop into good Christian men as they grow older. We would be glad to see you and your family join us in worshiping and serving God.</p> 
+
+            </div>
+
+
+            <div class="grid-item pd-15">
+                <h2>Brion Rector</h2>
+                <h3>Associate Pastor</h3>
+                <img src="img/pastors/brion2.jpg" alt="">
+
+                <blockquote>Cell: <a href="tel:812-406-8021">812-406-8021</a><br>Email: <a href="mailto:jbarector@gmail.com">jbarector@gmail.com</a></blockquote>
+            
+                <p>My name is Brion Rector. I am also one of the associate pastors. One of my roles includes  leading our adults.  My wife Hope and I have been married since the summer of 2009.  On May the 16th 2014 we welcomed our daughter Grace Anne Rector into the world. After much prayer, thought and discussion I felt God was calling my wife and I not only to this church but also to this position.</p>
+                
+                <p>The Lord came into my life in 1998 and life has been a roller coaster ride, full of highs, lows and a few surprise turns ever since. Since God has become the center of my life, I have seen His plan and purpose for my life. I will continue to focus on what God wants in my life and marriage and let God lead me where He needs me to go.  We love it here at One Community Church. I have been involved in various aspects of ministry over the last 12 years in churches primarily located in Southern Indiana. Youth ministry was my primary calling but have recently felt God calling me into the role of adult pastor. I look forward to meeting you and hearing what God is doing in your life.</p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="topic pd-15">
+
+        <h1>New to OCC?!</h1>
+        <p>Wondering <a href="">where to go</a>, <a href="">what to wear</a>, <a href="">what you'll hear</a>?!</p>
+
+
+        <div class="grid-four-content" style="max-width: 1400px; margin: 0 auto;">
+
+            <div class="grid-item">
+                <img src="img/item/welcome.jpg" alt="welcome">
+                <h2>Your First Visit?</h2>
+                <p>After arriving and finding the perfect parking spot, enter at one of our two main entrances! Feel free to enjoy some of the snacks or drinks that are always available before every service.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/item/wear.jpg" alt="wear">
+                <h2>What To Wear?</h2>
+                <p>Our dress is casual and comfortable. Jeans, khakis, or even shorts are fine! It is a matter of the heart that we are concerned with.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/facilities/sanctuary.jpg" alt="sanctuary">
+                <h2>What Type of Music?</h2>
+                <p>We believe that God loves music and so do we! We have been beyond blessed to have several God gifted musicians and singers lead us on a weekly basis! We combine a mix of contemporary worship songs while trying not to forget some of the classic hymns.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="img/item/kids.jpg" alt="kids">
+                <h2>Have Kids?</h2>
+                <p>We love children, please bring them! We have a nursery and a great children's program available during every service! They will be well taken care of, and learn something in the process.</p>
+                <!-- <p><em>Train up a child in the way he should go: even when he is old he will not depart from it. Proverbs 22:6 (ESV)</em></p> -->
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="topic pd-15">
+
+        <h1>Who is One Community Church?!</h1>
+        <p>It all started in 2005..</p>
+
+        <div class="content">
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>2005</h2>
+                <p>One Community Church started as a mission in October of 2005 as Harvest Valley Community Church (HVCC). Our purpose was to reach not only the youth of Southern Indiana but their parents as well. As we began to grow we moved to GRC Elementary school.</p>
+              </div>
+            </div>
+      
+            <div class="container right">
+              <div class="content">
+                <h2>2011</h2>
+                <p>The following summer we moved to neighboring Clarksville Elementary school. In March of 2011, we began a new era at HVCC. We added two additional pastors to our staff to focus on the needs of the adults and young adults. In the fall of 2013 we began sharing space with Charity Community Church.</p>
+              </div>
+            </div>
+      
+            <div class="container left">
+              <div class="content">
+                <h2>2014</h2>
+                <p>We officially merged in the Spring of 2014 with Charity Community Church to form One Community Church at 1810 Blackiston Mill Rd. in Clarksville. God has truly blessed us in so many ways and we are very excited for the future.</p>
+              </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                  <h2>2024 +</h2>
+                  <p>One Community Church is always planning for the future! As Matthew 28:19-20 says, we must continue making disciples of all nations... that's just what we're trying to do; one person at a time.</p>
+                </div>
+              </div>
+
+
+
+
+          </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+</main>
+
+<footer>
+    <img src="img/occ-favicon.png" alt="">
+</footer>
 
 
 <!-- <footer>
@@ -233,6 +644,8 @@
         BGLinks.linkVerses();
         </script>
 
+        <script src="js/section-scroll.js"></script>
+        <script src="js/dropDown.js"></script>
         <script src="js/mobile-menu.js"></script>
     
 </body>

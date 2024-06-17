@@ -2,6 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
+/* body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    scroll-behavior: smooth;
+} */
+
 * {
     box-sizing: border-box;
   } 
@@ -59,14 +67,16 @@ nav {
 }
 
 nav img {
-    filter:brightness(100);
+    /* filter:brightness(100); */
 }
 
 nav {
     background-color: rgba(61, 61, 61);
 }
 
-
+.nav-topic {
+    display: none;
+}
 
 
 nav ul {
@@ -132,6 +142,7 @@ nav li a:hover, .mobile-nav li a:hover, nav button:hover {
 .mobile-nav {
     transition: top 0.3s;
     height: 100vh;
+    z-index: 100;
     margin-top: 0;
     padding-top: 30px;
     max-width: max-content;
@@ -183,6 +194,10 @@ footer {
     text-align: center;
     border-top: thin solid;
     /* margin-top: 10vh; */
+}
+
+footer img {
+    max-height: 60px;
 }
 
 .footer-content {
@@ -334,6 +349,8 @@ iframe, video {
     grid-template-columns: 1fr 1fr;
     border-top: thin solid;
     border-bottom: thin solid;
+
+    height: 100vh;
 }
 
 .split-text {
@@ -382,6 +399,8 @@ blockquote {
     border-left: thick solid;
     padding-left: 10px;
     color: grey;
+    font-size: 14px;
+    line-height: 1.5;
     /* margin-left: 0; */
 }
 
@@ -454,7 +473,7 @@ details summary {
     display: none;
     position: fixed;
     background-color: rgb(26, 26, 26);
-    min-width: 550px;
+    /* min-width: 550px; */
     width: 65%;
     width: max-content;
     max-width: 90vw;
@@ -492,6 +511,19 @@ details summary {
         filter:brightness(1);
         border-radius: 50px;
   }
+
+  .dropdown-content h1, .dropdown-content h2 {
+    margin: 0;
+  }
+
+  .dropdown-content h2 {
+    text-transform: uppercase;
+    font-size: large;
+  }
+
+  .dropdown-content p {
+    line-height: 1.5em;
+  }
   
   .dropdown a:hover {
     background-color: #414141;
@@ -516,32 +548,226 @@ details summary {
 }
 
 
+.dropdown-content .grid-content {
+    overflow-y: auto;
+    max-height: 88vh;
+}
 
+.dropdown-content .grid-content::-webkit-scrollbar {
+    /* width: 5px; */
+}
 
-  .grid-content {
+.grid-content {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(2, minmax(auto, auto));
     gap: 1vw;
-  }
+    width: 100%;
+}
 
-  .pd-15 {
+.grid-three-content {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(3, minmax(auto, auto));
+    gap: 1vw;
+    width: 100%;
+}
+
+.grid-four-content {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(4, minmax(auto, auto));
+    gap: 2vw;
+    width: 100%;
+}
+
+
+
+.pd-15 {
     padding: 15px;
-  }
+}
 
 
-  @media screen and (max-height: 640px) {
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* justify-content: start; */
+    gap: 1vw;
+    /* width: 100%; */
+    /* align-content: space-between; */
+    margin-top: 15px;
+    align-items: center;
+}
+
+.profile img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.profile-name h2 {
+    margin: 0;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.profile-name h3 {
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.profile-name p {
+    margin: 0; 
+    margin-bottom: 15px;
+    font-size: medium;
+    /* max-width: 250px; */
+}
+
+
+/* Mobile menu styles */
+/* .nav-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.nav-mobile.active {
+    display: block;
+}
+
+.nav-mobile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 15%;
+}
+
+.nav-mobile li {
+    padding: 18px 10px;
+    text-align: center;
+}
+
+.nav-mobile a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-mobile a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+} */
+
+
+
+  /* @media screen and (max-height: 640px) {
     .dropdown-content .grid-content {
         display: inline-block;
         max-height: 85vh;
-        overflow-y: auto;
-        /* padding-bottom: 70px; */
+        
     }
 
     .dropdown-content {
         max-width: max-content;
     }
-  }
+  } */
+
+
+main img {
+    width: 100%;
+}
+
+.topic {
+    /* max-width: 1400px; */
+    margin: 0 auto;
+    background-color: rgb(3, 3, 32);
+    padding-bottom: 10vh;
+}
+
+.topic a:link, .topic a:visited {
+    color: #7a7a7a;
+    text-decoration: none;
+    border-bottom: 1.5px dashed #7a7a7a;
+}
+
+.topic a:hover {
+    color: #d6d6d6;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.topic h1 {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 50px;
+    /* margin-bottom: 25px; */
+}
+
+.topic p {
+    max-width: 1400px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    /* text-transform: ;p?; */
+    margin-bottom: 45px;
+}
+
+.grid-item {
+    /* background-color: aqua; */
+    border-radius: 12px;
+    /* background-color: #414141; */
+    /* box-shadow: 0px 0px 3px grey; */
+}
+
+
+.grid-item img {
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.grid-item h2 {
+    /* margin-top: 0; */
+    margin-bottom: 0;
+    font-size: x-large;
+}
+
+.grid-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    opacity: 70%;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+}
+
+.grid-item p {
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+
 
 @media screen and (max-width: 1400px) {
     /* nav h1 {
@@ -550,7 +776,7 @@ details summary {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
 
     .nav-desktop {
         display: none;
@@ -570,17 +796,20 @@ details summary {
 
     .nav-mobile {
         display: block;
-        
     }
 
     nav img {
         max-height: 40px;
     }
 
+    .grid-three-content, .grid-four-content {
+        grid-template-columns: repeat(2, minmax(auto, auto));
+    }
+
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .item {
         padding: 0;
         box-shadow: none;
@@ -590,7 +819,9 @@ details summary {
         border-bottom: thin solid;
     }
 
-
+    .grid-three-content {
+        grid-template-columns: repeat(1, minmax(auto, auto));
+    }
 
     .grid-three-items {
         grid-template-columns: 1fr;
@@ -620,7 +851,7 @@ details summary {
 }
 
 @media screen and (max-width: 400px) {
-    .nav-topic {
+    .nav-topic, nav img {
         display: none;
     }
 }
@@ -638,8 +869,8 @@ details summary {
 
 
 @media screen and (prefers-color-scheme: light) {
-    nav img {
-        /* filter:invert(100); */
+    nav img, footer img {
+        filter: invert(100);
     }
 
     .split-text a:link, .split-text a:visited, footer a:link, footer a:visited, summary {
@@ -647,7 +878,63 @@ details summary {
         font-weight: 700;
         /* text-decoration: none; */
     }
+
+    nav {
+        background-color: white;
+        color: black;
+        box-shadow: 0px 0px 1px 0px rgb(17, 17, 17);
+    }
+
+    .dropdown button {
+        color: black;
+    }
+
+    nav li a:hover, .mobile-nav li a:hover, nav button:hover {
+        background-color: rgb(75, 75, 75);
+    }
+
+    .iframe-container, .dropdown-content img, .grid-item img {
+        box-shadow: 0px 0px 1px 0px rgb(17, 17, 17);
+    }
+
+    .active, .nav-topic li a {
+        color: white !important;
+    }
+
+    .dropdown-content {
+        background-color: rgb(241, 241, 241);
+        box-shadow: 0px 4px 10px 0px rgb(87, 87, 87);
+    }
+
+    .dropdown-content img {
+        filter:invert(0);
+    }
+
+    .topic {
+        /* color: white; */
+        background-color: #f8f8f8;
+    }
+
+    .topic a:link, .topic a:visited {
+        color: #29143a;
+        font-weight: 800;
+        text-decoration: none;
+        border-bottom: 1.5px dashed #292929;
+    }
+    
+    .topic a:hover {
+        color: #4b4b4b;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+
+
+
+
 }
+
+
 
 
 @media screen and (prefers-color-scheme: dark) {
@@ -666,6 +953,10 @@ details summary {
     .bg_popup div {
         margin: 0;
         color: black;
+    }
+
+    blockquote a:link, blockquote a:visited {
+        color: white;
     }
 
     
