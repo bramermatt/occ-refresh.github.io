@@ -92,6 +92,10 @@ nav ul {
     display: inline-block;
 }
 
+.grid-content ol, .grid-content ul {
+    padding: 0;
+}
+
 nav li, nav button {
     font-weight: 200;
 }
