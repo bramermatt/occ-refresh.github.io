@@ -626,7 +626,7 @@ details summary {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(4, minmax(auto, auto));
-    gap: 1vw;
+    gap: 2vw;
     width: 100%;
 }
 
@@ -680,7 +680,7 @@ details summary {
 
 
 .topic .profile img {
-    height: 250px;
+    height: 150px;
 }
 
 .topic .profile h2 {
@@ -1032,18 +1032,19 @@ section img {
         left: 10px;
     }
 
-    .profile img {
-        max-width: 100%;
+    .topic .profile img {
+        height: 250px;
     }
+    
 
     .profile {
-        gap: 4vw;
+        gap: 2vw;
     }
 
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .item {
         padding: 0;
         box-shadow: none;
@@ -1090,6 +1091,10 @@ section img {
         height: 130px;
     }
 
+    .grid-item img {
+        max-width: max-content;
+    }
+
 
 
 
@@ -1113,7 +1118,11 @@ section img {
     } */
 
     .profile img {
-        width: 100%;
+        /* width: 100%; */
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
     }
 
 
