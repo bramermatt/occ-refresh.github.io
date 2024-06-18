@@ -36,7 +36,7 @@
             <!-- <li><a href="">About</a></li> -->
 
 
-             <li class="dropdown">
+             <li class="dropdown" id="about-us">
                 <button class="dropbtn" onclick="toggleDropdown('dropDown6', this)">About Us <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                 <div class="dropdown-content" id="dropDown6">
                     <div class="grid-content">
@@ -65,7 +65,7 @@
             </li>
 
             
-            <li class="dropdown">
+            <li class="dropdown" id="services">
                 <button class="dropbtn" onclick="toggleDropdown('dropDown1', this)">Services <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                 <div class="dropdown-content" id="dropDown1">
                     <div class="grid-content">
@@ -83,8 +83,8 @@
                         
                         <div class="pd-15">
                             <h1>Stream LIVE</h1>
-                            <p><strong><a href=""> <img src="img/icon/youtube.png" alt=""> YouTube</a></strong></p>
-                            <p><strong><a href=""><img src="img/icon/facebook.png" alt=""> Facebook</a></strong></p>
+                            <p><strong><a href="https://www.youtube.com/@OneCommunityChurchIndiana/live" target="_blank"> <img src="img/icon/youtube.png" alt=""> YouTube</a></strong></p>
+                            <p><strong><a href="https://www.facebook.com/onecommunitychurch" target="_blank"><img src="img/icon/facebook.png" alt=""> Facebook</a></strong></p>
                         </div>
 
                         <div class="pd-15">
@@ -186,13 +186,13 @@
                 </div>
             </li>
 
-            <li class="dropdown">
+            <li class="dropdown" id="prayer">
                 <button class="dropbtn" onclick="toggleDropdown('dropDown3', this)">Prayer <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                 <div class="dropdown-content" id="dropDown3">
                     <div class="grid-content">
                         <div class="pd-15">
                             <h1>Need Prayer?</h1>
-                            <p><strong>Send a Prayer Request:</strong> <a href="http://" target="_blank" rel="noopener noreferrer">pastor@onecommunity.church</a></p>
+                            <p><strong>Send a Prayer Request:</strong> <a href="mailto:pastoronecommunity@gmail.com?subject=Prayer%20Request" target="_blank" rel="noopener noreferrer">pastoronecommunity@gmail.com</a></p>
                         </div>
 
                         <div class="pd-15">
@@ -250,6 +250,26 @@
                                 <iframe src="https://calendar.google.com/calendar/embed?src=177ministries%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="90vw" height="600" frameborder="0" scrolling="no"></iframe>
                             </div>
                         </div>
+
+
+                        
+
+                    </div>
+                </div>
+            </li>
+
+            
+            <li class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropDown7', this)">Facilities <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropDown7">
+                    <div class="grid-content">
+
+                        <div class="pd-15">
+                            <h1>Our Facilities Agreement</h1>
+                            <ul>
+                            <a href="https://waivermaster.com/sign.html?q=D5KCR8CL2RMGR&fbclid=IwAR0HoBf3wUrvc6467SKtjDC9-zaOdvowKx8ql2TbjeqLYrOHizuHBL7Z-tg" target="_blank"><li>Facilities Agreement</li></a>
+                        </ul>
+                            </div>
 
 
                         
@@ -320,8 +340,8 @@
                 
                 <div class="pd-15">
                     <h1>Stream LIVE</h1>
-                    <p><strong><a href=""> <img src="img/icon/youtube.png" alt=""> YouTube</a></strong></p>
-                    <p><strong><a href=""><img src="img/icon/facebook.png" alt=""> Facebook</a></strong></p>
+                    <p><strong><a href="https://www.youtube.com/@OneCommunityChurchIndiana/live" target="_blank"> <img src="img/icon/youtube.png" alt=""> YouTube</a></strong></p>
+                    <p><strong><a href="https://www.facebook.com/onecommunitychurch" target="_blank"><img src="img/icon/facebook.png" alt=""> Facebook</a></strong></p>
                 </div>
 
                 <div class="pd-15">
@@ -483,205 +503,23 @@
             </div>
         </details>
 
+        <details id="facilities">
+            <summary>Facilities <i class="fa fa-arrow-down" aria-hidden="true"></i></summary>
+                    <div class="grid-content">
+
+                        <div class="pd-15">
+                            <h1>Our Facilities Agreement</h1>
+                            <ul>
+                            <a href="https://waivermaster.com/sign.html?q=D5KCR8CL2RMGR&fbclid=IwAR0HoBf3wUrvc6467SKtjDC9-zaOdvowKx8ql2TbjeqLYrOHizuHBL7Z-tg" target="_blank"><li>Facilities Agreement</li></a>
+                        </ul>
+                            </div>
+                    </div>
+        </details>
+
 
         <!-- <li><a href="">Facilities</a></li> -->
     </ul>
 
-    <!-- duped desktop nav 
-    <ul class="mobile-nav" id="mobile-nav">
-        <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            
-            <li class="dropdown">
-                <button class="dropbtn" onclick="toggleDropdown('dropDown6', this)">Services <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                <div class="dropdown-content" id="dropDown6">
-                    <div class="grid-content">
-                        <div class="pd-15">
-                            <h1>Sundays</h1>
-                            <p><strong>Small Group Study:</strong> 9:45 AM</p>
-                            <p><strong>Worship:</strong> 11:00 AM</p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Wednesdays</h1>
-                            <p><strong>Small Group Study:</strong> 6:30 PM</p>
-                            <p><strong>Worship:</strong> 7:00 PM</p>
-                        </div>
-                        
-                        <div class="pd-15">
-                            <h1>Stream LIVE</h1>
-                            <p><strong><a href=""> <img src="img/icon/youtube.png" alt=""> YouTube</a></strong></p>
-                            <p><strong><a href=""><img src="img/icon/facebook.png" alt=""> Facebook</a></strong></p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>In Person</h1>
-                            <p><strong>One Community Church Indiana</strong>, located at <em>1810 Blackiston Mill Road, Clarksville, IN 47129</em></p>
-                            <div class="iframe-container" style="border-radius: 10px;">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.32639216147!2d-85.77988768442322!3d38.31827188847578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88696de4c640ef57%3A0xcdb8a9dc819fbcfc!2s1810%20Blackiston%20Mill%20Rd%2C%20Clarksville%2C%20IN%2047129!5e0!3m2!1sen!2sus!4v1664753261156!5m2!1sen!2sus" width="100%" height="380" style="border:0; display: block; margin-bottom: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-
-            </li>
-
-            <li class="dropdown">
-                <button class="dropbtn" onclick="toggleDropdown('dropDown2', this)">Ministries <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                <div class="dropdown-content" id="dropDown2">
-                    <div class="grid-content" >
-
-                        <div class="pd-15">
-                            <h1>Nursery Ministries</h1>
-                            <h2>Ages 0-6</h2>
-                            <p><strong>Nursery Ministry</strong> is dedicated to providing a safe, nurturing, and loving environment for infants and toddlers. Our team of trained caregivers ensures that your little ones are cared for with the utmost attention and love while you attend services and other church activities. We focus on early spiritual growth through simple songs, stories, and interactive play.</p>
-
-                            <div class="profile">
-                                <img src="img/staff/denise-prof-square.jpg" alt="">
-                                    <div class="profile-name">
-                                        <h2>Denise Boeshe</h2>
-                                        <p>Nursery Leader</p>
-                                    </div>  
-                            </div>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Children's Ministries</h1>
-                            <h2>Ages 6-12</h2>
-                            <p><strong>Children's Ministry</strong> offers engaging and age-appropriate programs for children from preschool through elementary school. Our mission is to instill a love for Jesus and the Bible through dynamic storytelling, interactive lessons, worship, and fun activities. We aim to build a solid spiritual foundation that will support their faith journey for years to come.</p>
-
-                            <div class="profile">
-                                <img src="img/staff/sandy-prof-square.jpg" alt="">
-                                    <div class="profile-name">
-                                        <h2>Sandy Bramer</h2>
-                                        <p>Chidren's Church Leader</p>
-                                    </div>  
-                            </div>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Youth Ministries</h1>
-                            <h2>Ages 13-18</h2>
-                            <p><strong>Youth Ministry</strong> is designed to help middle school and high school students grow in their faith, build strong friendships, and navigate the challenges of adolescence. Through weekly meetings, Bible studies, retreats, and service projects, we create an environment where teens can explore their faith, ask questions, and develop a personal relationship with Jesus.</p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Young Adult Ministries</h1>
-                            <h2>Ages 18-</h2>
-                            <p><strong>Young Adult Ministry</strong> provides a vibrant community for college students, young professionals, and early career individuals. Our goal is to support young adults in their spiritual, personal, and professional growth. We offer Bible studies, social events, mentorship opportunities, and service projects to help young adults connect with each other and deepen their faith.</p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Adult Ministries</h1>
-                            <h2></h2>
-                            <p><strong>Adult Ministry</strong> encompasses a variety of programs and activities designed to support adults at all stages of life. From small group Bible studies to fellowship events and volunteer opportunities, our goal is to help adults grow in their faith, build meaningful relationships, and serve the community. We offer specialized programs for singles, couples, and seniors to meet their unique needs.</p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Food Ministries</h1>
-                            <h2>Community Blessing Box</h2>
-                            <p><strong>Food Giveaway Ministry</strong> is committed to addressing food insecurity in our community. We organize regular food drives and distribution events to provide nutritious groceries to individuals and families in need. Our volunteers work tirelessly to ensure that everyone has access to the food they need, embodying the love and compassion of Christ through practical support.</p>
-                        </div>
-                        
-                        <div class="pd-15">
-                            <h1>Bike Ministries</h1>
-                            <h2>Community Bike Giveaways</h2>
-                            <p><strong>Bike Giveaway Ministry</strong> aims to provide children and adults with the gift of mobility and freedom. We collect, repair, and distribute bicycles to those who may not have access to reliable transportation. Through our bike giveaways, we hope to promote healthy living, reduce transportation barriers, and bring joy to recipients, reflecting God's love in a tangible way.</p>
-                        </div>
-
-
-                        
-                    </div>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <button class="dropbtn" onclick="toggleDropdown('dropDown3', this)">Prayer <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                <div class="dropdown-content" id="dropDown3">
-                    <div class="grid-content">
-                        <div class="pd-15">
-                            <h1>Need Prayer?</h1>
-                            <p><strong>Send a Prayer Request:</strong> <a href="http://" target="_blank" rel="noopener noreferrer">pastor@onecommunity.church</a></p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Current Prayer Requests</h1>
-                            <p><strong>June 2024</strong></p>
-                            <p>
-                                Our Church * Amy Beard * Rosemary Mix* 
-                                Gayle Blankenship -Cordero (Jana’s sister) * 
-                                Jacqueline Fosnot (MR) * Wayne Avery * 
-                                Stacey Schultz (SM)* Amanda Hochstetler (SB) 
-                                * Rhonda Goforth’s Family * Dennis 
-                                Loughmiller * Bret Taylor (Sharon Shepherd’s 
-                                son) * Mary Lee Mahan (TH) * Everett Bramer 
-                                * Leah (Wendi’s Boss) * Sherry Wells (Denise 
-                                S. Sister) * Doris Alexander * Laura DeKorte * 
-                                Don & Janet DeKorte * Heather Smoot (CL)
-                                * Jean Dorman * Silas Lacroix (son of TJ 
-                                & Samantha)* Robbie Coogle (Jon’s 
-                                boss) & AJ Mallot’s family * Marcie 
-                                Chavez’s family
-                                </p>
-                        </div>
-                        
-
-
-                        
-                    </div>
-                </div>
-            </li>
-            
-
-            <li class="dropdown">
-                <button class="dropbtn" onclick="toggleDropdown('dropDown4', this)">Giving <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                <div class="dropdown-content" id="dropDown4">
-                    <div class="grid-content">
-                        <div class="pd-15">
-                            <h1>Online Offering</h1>
-                            <p><a href="https://square.link/u/9iWte5VO" target="_blank">One Community Church Indiana Online Giving</a></p>
-                        </div>
-                        
-
-                    </div>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <button class="dropbtn" onclick="toggleDropdown('dropDown5', this)">Events <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                <div class="dropdown-content" id="dropDown5">
-                    <div class="grid-content">
-
-                        <div class="pd-15">
-                            <h1>Children's Ministry</h1>
-                            <p>VBS!</p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Youth Ministry</h1>
-                            <p>CHURCH CAMP!</p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Young Adult Ministry</h1>
-                            <p>Started a NEW CLASS!</p>
-                        </div>
-
-                        <div class="pd-15">
-                            <h1>Food Ministry</h1>
-                            <p>Food Giveaway Every Third Thursday!</p>
-                        </div>
-                        
-
-                    </div>
-                </div>
-            </li>
-            <li><a href="">Facilities</a></li>
-    </ul>
-
- -->
 
     </nav>
 
@@ -718,6 +556,50 @@
             <li><a href="#meet-our-pastors">Meet our Pastors</a></li>
             <li><a href="#who-is-occ">Who is One Community Church?!</a></li>
         </ul>
+
+    </div>
+
+
+    <div class="topic pd-15" id="service-times">
+
+        <h1>Join Us ONLINE or IN PERSON!</h1>
+
+        <div class="grid-four-content social-link" style="max-width: 1200px; margin: 0 auto;">
+
+            
+            <div class="pd-15">
+                <h2>Sundays</h2>
+                <p><strong>Small Group Study:</strong> 9:45 AM</p>
+                <p><strong>Worship:</strong> 11:00 AM</p>
+            </div>
+
+            <div class="pd-15">
+                <h2>Wednesdays</h2>
+                <p><strong>Worship:</strong> 6:30 PM</p>
+                <p><strong>Small Group Study:</strong> 7:00 PM</p>
+            </div>
+
+            <div class="pd-15">
+                <h2>Stream LIVE</h2>
+                <p><strong><a href="https://www.youtube.com/@OneCommunityChurchIndiana/live" target="_blank"> <img src="img/icon/youtube.png" alt=""> YouTube</a></strong></p>
+
+            </div>
+
+            <div class="pd-15">
+                <h2>Stream LIVE</h2>
+                <p><strong><a href="https://www.facebook.com/onecommunitychurch" target="_blank"><img src="img/icon/facebook.png" alt=""> Facebook</a></strong></p>
+            </div>
+            
+
+        </div>
+
+        
+
+
+
+        
+
+
 
     </div>
 
@@ -985,6 +867,16 @@
                         <div class="profile-name">
                             <h2>Matthew Bramer</h2>
                             <h3>Worship Leader, Web Developer</h3>
+                        </div>  
+                </div>
+            </div>
+
+            <div class="pd-15">
+                <div class="profile">
+                    <img src="img/staff/wendi-prof-square.jpg" alt="">
+                        <div class="profile-name">
+                            <h2>Wendi Tatum</h2>
+                            <h3>Youth Ministries Leader</h3>
                         </div>  
                 </div>
             </div>

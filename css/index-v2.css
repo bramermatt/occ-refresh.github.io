@@ -1608,6 +1608,10 @@ details p, details h2 {
     .overlay  {
         display: none;
     }
+
+    .profile img {
+        width: 100%;
+    }
     
 }
 

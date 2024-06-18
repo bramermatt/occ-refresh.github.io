@@ -74,6 +74,8 @@ nav {
     background-color: rgba(61, 61, 61);
 }
 
+
+
 .nav-topic {
     display: none;
 }
@@ -640,7 +642,7 @@ details summary {
     display: grid;
     grid-template-columns: 1fr 2fr;
     /* justify-content: start; */
-    gap: 2vw;
+    gap: 1vw;
     /* width: 100%; */
     /* align-content: space-between; */
     margin-top: 15px;
@@ -649,9 +651,9 @@ details summary {
 
 .profile img {
     max-height: 200px;
-    width: 100%;
+    /* width: 100%; */
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
 
     box-shadow: 0px 0px 4px grey;
 }
@@ -753,7 +755,7 @@ details summary {
 
 
 main img {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .topic {
@@ -937,14 +939,36 @@ section img {
   }
 
 
+
+
+
+
+
+.social-link img {
+    max-width: 50%;
+    object-fit: cover;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
 @media screen and (max-width: 1400px) {
     /* nav h1 {
         display: none;
     } */
+
+    .grid-three-content, .grid-four-content {
+        grid-template-columns: repeat(2, minmax(auto, auto));
+    }
+
 }
 
 
 @media screen and (max-width: 1000px) {
+
+    .social-link img {
+        max-width: 30%;
+    }
 
 
     .sidebar {
@@ -978,9 +1002,7 @@ section img {
         max-height: 40px;
     }
 
-    .grid-three-content, .grid-four-content {
-        grid-template-columns: repeat(2, minmax(auto, auto));
-    }
+
 
 
     .dropdown-content {
@@ -1008,6 +1030,14 @@ section img {
         margin-top: 10px;
         bottom: 0;
         left: 10px;
+    }
+
+    .profile img {
+        max-width: 100%;
+    }
+
+    .profile {
+        gap: 4vw;
     }
 
 }
@@ -1056,7 +1086,8 @@ section img {
     }
 
     .mobile-nav details img {
-        max-height: 80px;
+        /* max-height: 80px; */
+        height: 130px;
     }
 
 
@@ -1080,6 +1111,10 @@ section img {
     /* .title {
         position: absolute;
     } */
+
+    .profile img {
+        width: 100%;
+    }
 
 
 }
@@ -1110,7 +1145,7 @@ section img {
     nav {
         background-color: white;
         color: black;
-        box-shadow: 0px 0px 1px 0px rgb(17, 17, 17);
+        box-shadow:  1px 0px 4px rgb(17, 17, 17);
     }
 
     .dropdown button {
@@ -1173,7 +1208,7 @@ section img {
     .nav-mobile li a {
         background-color: lightgrey;
         border-radius: 10px;
-        box-shadow: 4px 4px 1px grey;
+        box-shadow: 2px 2px 1px grey;
     }
 }
 
@@ -1187,7 +1222,7 @@ section img {
     .nav-mobile li a {
         background-color: rgb(39, 39, 39);
         border-radius: 10px;
-        box-shadow: 2px 2px 1px grey;
+        box-shadow: 1px 1px 1px grey;
     }
 }
 
@@ -1202,6 +1237,9 @@ section img {
         text-decoration: none;
     }
 
+    nav {
+        box-shadow: 1px 0px 4px black;
+    }
 
     .mobile-nav, body {
         background-color: rgb(26, 26, 26);
@@ -1224,6 +1262,10 @@ section img {
         border: thin solid grey;
         background-color: rgb(48, 48, 48);
         box-shadow: -7px 7px 0px rgb(0, 0, 0);
+    }
+
+    body {
+        background-color: rgba(61, 61, 61);
     }
     
 }
