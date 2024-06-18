@@ -113,7 +113,9 @@ body {
   #myBtn:hover {
     color: #555; 
     background-color: white;
-    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+    box-shadow: 3px 3px 0px grey;
+
+    /* filter: drop-shadow(0 0 1px rgb(0, 0, 0)); */
     /* Add a dark-grey background on hover */
     opacity: 100%;
   }

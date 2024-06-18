@@ -90,10 +90,12 @@ nav ul {
 
 .dropdown-content .grid-content ul, .grid-content ol {
     display: inline-block;
+    padding: 0;
 }
 
 .grid-content ol, .grid-content ul {
     padding: 0;
+    margin: 15px;
 }
 
 nav li, nav button {
@@ -547,7 +549,7 @@ details summary {
     text-decoration: none;
     display: inline-block;
     margin-top: 8px;
-    box-shadow: 0px 0px 2px 0px rgb(128, 128, 128);
+    box-shadow: 0px 0px 3px 0px rgb(128, 128, 128);
     border-radius: 10px;
     /* display: block; */
   }
@@ -622,7 +624,7 @@ details summary {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(4, minmax(auto, auto));
-    gap: 2vw;
+    gap: 1vw;
     width: 100%;
 }
 
@@ -650,6 +652,8 @@ details summary {
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+
+    box-shadow: 0px 0px 4px grey;
 }
 
 .profile-name h2 {
@@ -669,6 +673,26 @@ details summary {
     margin-bottom: 15px;
     font-size: medium;
     /* max-width: 250px; */
+}
+
+
+
+.topic .profile img {
+    height: 250px;
+}
+
+.topic .profile h2 {
+    margin-bottom: 0;
+    font-size: x-large;
+}
+
+.topic .profile h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    opacity: 70%;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
 }
 
 
@@ -767,6 +791,15 @@ main img {
     margin-bottom: 45px;
 }
 
+.topic ol, .topic ul {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.topic li {
+    margin-bottom: 25px;
+}
+
 .grid-item {
     /* background-color: aqua; */
     border-radius: 12px;
@@ -846,6 +879,62 @@ section img {
     margin-bottom: 0;
 }
 
+.sidebar {
+    float: right;
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+    max-width: 20%;
+
+    margin-left: 10px;
+    border-left: thin solid;
+
+    display: none;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 8px;
+}
+
+.sidebar li {
+    font-size: 14px;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    /* color: var(--text); */
+    color:black;
+    cursor: pointer;
+    /* padding: 20px; */
+    border-radius: 10px;
+    font-size: 48px;
+    /* filter: drop-shadow(0 0 1px rgb(0, 0, 0)); */
+    opacity: 40%;
+  }
+  
+  #myBtn:hover {
+    color: #555; 
+    background-color: white;
+    /* filter: drop-shadow(0 0 1px rgb(0, 0, 0)); */
+
+    box-shadow: 2px 2px 0px grey;
+
+    /* Add a dark-grey background on hover */
+    opacity: 100%;
+  }
 
 
 @media screen and (max-width: 1400px) {
@@ -856,6 +945,14 @@ section img {
 
 
 @media screen and (max-width: 1000px) {
+
+
+    .sidebar {
+        max-width: 100%;
+        float: none;
+        position: static;
+        margin: 20px;
+    }
 
     .nav-desktop {
         display: none;
@@ -903,9 +1000,14 @@ section img {
     } */
 
     .title {
-        width: 90%;
+        width: 98%;
         bottom: 2vh;
         left: 4vw;
+
+        position: relative;
+        margin-top: 10px;
+        bottom: 0;
+        left: 10px;
     }
 
 }
@@ -948,6 +1050,16 @@ section img {
     .split img {
         height: 70vh;
     }
+
+    .grid-content ol, .grid-content ul {
+        margin: 0;
+    }
+
+    .mobile-nav details img {
+        max-height: 80px;
+    }
+
+
 
 
 }
@@ -1061,7 +1173,7 @@ section img {
     .nav-mobile li a {
         background-color: lightgrey;
         border-radius: 10px;
-        box-shadow: 2px 2px 1px grey;
+        box-shadow: 4px 4px 1px grey;
     }
 }
 
