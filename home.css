@@ -1094,7 +1094,7 @@ section img {
         filter:invert(0);
     }
 
-    .topic {
+    .topic, body, footer {
         /* color: white; */
         background-color: #f8f8f8;
     }
@@ -1128,7 +1128,7 @@ section img {
         box-shadow: 2px 2px 4px grey;
     }
 
-    nav img {
+    nav img, footer img {
         box-shadow: none !important;
     }
 
@@ -1202,7 +1202,7 @@ section img {
         color: white;
     }
 
-    .topic, footer  {
+    .topic, footer, body  {
         background-color: rgb(2, 2, 36);
     }
 
