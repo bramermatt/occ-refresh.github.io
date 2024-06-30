@@ -115,6 +115,7 @@ nav li, nav button {
 nav li a, .mobile-nav li a, .footer-tree li a, nav button {
     padding: 10px;
     font-weight: normal;
+    display: inline-block;
    
 }
 
@@ -239,6 +240,28 @@ nav li a:hover, .mobile-nav li a:hover, nav button:hover, .mobile-nav details a:
 .nav-mobile .fa {
     font-size: 22px;
     cursor: pointer;
+}
+
+.locate-us {
+    ul {
+        list-style-type: none;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    /* a:link {
+        color: var(--text);
+    } */
+
+    i {
+        font-size: 22px;
+    }
 }
 
 
@@ -849,13 +872,17 @@ main img {
     padding-bottom: 10vh;
 }
 
-.topic a:link, .topic a:visited, footer a:link, footer a:visited, .mobile-nav a:link, .mobile-nav a:visited {
+.topic a:link, .topic a:visited, footer a:link, footer a:visited, .mobile-nav a:link, .mobile-nav a:visited, .locate-us a:link, .locate-us a:visited {
     color: #7a7a7a;
     text-decoration: none;
     border-bottom: 1.5px dashed #7a7a7a;
 }
 
-.topic a:hover, footer a:hover {
+.locate-us a:link, .locate-us a:visited {
+    color: rgb(193, 193, 193);
+}
+
+.topic a:hover, footer a:hover, .locate-us a:hover{
     color: #d6d6d6;
     text-decoration: none;
     border-bottom: none;
@@ -969,7 +996,7 @@ section img {
 
 .title {
     position: absolute;
-    bottom: 5vh;
+    bottom: 8vh;
     left: 2vw;
     
 
@@ -1104,14 +1131,14 @@ section img {
         background-color: #f8f8f8;
     }
 
-    .topic a:link, .topic a:visited, footer a:link, footer a:visited {
+    .topic a:link, .topic a:visited, footer a:link, footer a:visited, .locate-us a:link, .locate-us a:visited {
         color: #29143a;
         font-weight: 800;
         text-decoration: none;
         border-bottom: 1.5px dashed #292929;
     }
     
-    .topic a:hover, footer a:hover {
+    .topic a:hover, footer a:hover, .locate-us a:hover {
         color: #4b4b4b;
         text-decoration: none;
         border-bottom: none;
