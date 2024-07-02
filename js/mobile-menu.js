@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // matt was here
+
+
   // Close menu when a menu item is clicked
   document.querySelectorAll('.mobile-nav a').forEach(item => {
     item.addEventListener('click', () => {
