@@ -2,12 +2,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.getElementById('mobile-nav');
   const icon = document.getElementById('menu-icon');
 
+  function closeDetails() {
+    document.querySelectorAll('.mobile-nav details[open]').forEach(detail => {
+      detail.removeAttribute('open');
+    });
+  }
+
   function mobileMenu() {
     if (menu.classList.contains('open')) {
       menu.classList.remove('open');
       icon.classList.remove('fa-times');
       icon.classList.add('fa-bars');
       document.body.classList.remove('no-scroll');
+      closeDetails();  // Close details when menu is closed
     } else {
       menu.classList.add('open');
       icon.classList.remove('fa-bars');
@@ -31,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.classList.add('fa-bars');
       document.body.classList.remove('no-scroll');
       scrollToTop();
+      closeDetails();  // Close details when a menu item is clicked
     });
   });
 
