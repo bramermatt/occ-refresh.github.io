@@ -78,6 +78,12 @@ nav {
     
 }
 
+.nav-img {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
 
 nav img {
     /* filter:brightness(100); */
